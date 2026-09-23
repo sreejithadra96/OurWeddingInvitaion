@@ -1,0 +1,2123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Nithya &amp; Sreejith — 6 December 2026</title>
+<meta name="description" content="With the blessings of our families, we invite you to join us as we begin our life together. Sunday, 6 December 2026 — Hi-Tech Auditorium, Pirayiri, Palakkad.">
+<meta name="theme-color" content="#4E0D1E">
+<meta property="og:title" content="Nithya &amp; Sreejith — 6 December 2026">
+<meta property="og:description" content="With the blessings of our families, we invite you to join us as we begin our life together.">
+<meta property="og:type" content="website">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;1,300;1,400&family=Playfair+Display:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Poppins:wght@200;300;400;500&display=swap" rel="stylesheet">
+
+<style>
+/* ═══════════════════════════════════════════════════════════════════════════
+   NITHYA & SREEJITH — 6 December 2026
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+/* ── TOKENS ─────────────────────────────────────────────────────────────── */
+:root{
+  --cream:   #FCF8F0;
+  --ivory:   #FFFDF8;
+  --beige:   #F4EADA;
+  --sand:    #E8DAC0;
+
+  --maroon:   #4E0D1E;
+  --maroon-2: #6E1329;
+  --maroon-3: #2E0711;
+  --wine:     #8A3049;
+
+  --gold:    #C29B54;
+  --gold-lt: #E6CE95;
+  --gold-pl: #F3E6C6;
+  --gold-dk: #8E6C2E;
+
+  --ink:      #3B2B23;
+  --ink-soft: #6E5A4D;
+  --ink-mute: #9A8877;
+
+  --sh-1: 0 2px 12px rgba(78,13,30,.06);
+  --sh-2: 0 18px 46px -18px rgba(78,13,30,.24);
+  --sh-3: 0 38px 86px -34px rgba(78,13,30,.42);
+
+  --serif:  "Playfair Display", Georgia, serif;
+  --serif2: "Cormorant Garamond", Georgia, serif;
+  --sans:   "Poppins", system-ui, -apple-system, "Segoe UI", sans-serif;
+
+  --maxw: 1180px;
+
+  /* one easing family, used everywhere — this is what makes it feel coherent */
+  --out:   cubic-bezier(.16,1,.3,1);
+  --inout: cubic-bezier(.65,0,.35,1);
+  --soft:  cubic-bezier(.33,1,.68,1);
+}
+
+/* ── RESET ──────────────────────────────────────────────────────────────── */
+*,*::before,*::after{ box-sizing:border-box; }
+[hidden]{ display:none !important; }
+html{
+  -webkit-text-size-adjust:100%;
+  overflow-x:hidden;
+  scroll-behavior:smooth;
+}
+body{
+  margin:0;
+  background:var(--cream);
+  color:var(--ink);
+  font-family:var(--sans);
+  font-weight:300;
+  line-height:1.7;
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+img{ max-width:100%; display:block; }
+button{ font:inherit; color:inherit; cursor:pointer; background:none; border:none; }
+a{ color:inherit; }
+h1,h2,h3{ margin:0; font-weight:500; }
+p{ margin:0; }
+::selection{ background:rgba(194,155,84,.3); color:var(--maroon); }
+
+/* ── FIXED ATMOSPHERE LAYERS ────────────────────────────────────────────── */
+
+/* film grain — the single biggest "expensive print" cue */
+.grain{
+  position:fixed; inset:-120%; z-index:820; pointer-events:none;
+  opacity:.28; mix-blend-mode:multiply;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix type='saturate' values='0'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='.42'/%3E%3C/svg%3E");
+  animation:grainShift 7s steps(6) infinite;
+}
+@keyframes grainShift{
+  0%,100%{ transform:translate(0,0); }
+  16%{ transform:translate(-2%,-3%); }
+  33%{ transform:translate(3%,-2%); }
+  50%{ transform:translate(-3%,2%); }
+  66%{ transform:translate(2%,3%); }
+  83%{ transform:translate(-2%,1%); }
+}
+
+/* kasavu border — the thin gold double-line of a Kerala mundu, framing the viewport */
+.kasavu{
+  position:fixed; inset:11px; z-index:815; pointer-events:none;
+  border:1px solid rgba(194,155,84,.26);
+  box-shadow:inset 0 0 0 3px rgba(252,248,240,0), inset 0 0 0 4px rgba(194,155,84,.12);
+  transition:border-color .8s var(--soft);
+}
+.on-dark .kasavu{ border-color:rgba(230,206,149,.24); }
+@media (max-width:640px){ .kasavu{ inset:7px; } }
+
+/* global vignette, breathing slowly */
+.vignette{
+  position:fixed; inset:0; z-index:810; pointer-events:none;
+  background:radial-gradient(ellipse 120% 90% at 50% 45%, transparent 55%, rgba(78,13,30,.07) 100%);
+}
+
+/* falling jasmine */
+.petals{ position:fixed; inset:0; pointer-events:none; z-index:805; overflow:hidden; }
+.petal{
+  position:absolute; top:-10vh; opacity:0;
+  animation:fall linear infinite;
+  will-change:transform,opacity;
+}
+.petal svg{ width:100%; height:100%; }
+@keyframes fall{
+  0%  { transform:translate3d(0,-12vh,0) rotate(0deg) scale(.92); opacity:0; }
+  7%  { opacity:var(--o,.8); }
+  25% { transform:translate3d(26px,18vh,0) rotate(96deg) scale(1); }
+  50% { transform:translate3d(-18px,48vh,0) rotate(190deg) scale(.97); }
+  75% { transform:translate3d(30px,76vh,0) rotate(282deg) scale(1.02); }
+  94% { opacity:calc(var(--o,.8) * .55); }
+  100%{ transform:translate3d(-12px,114vh,0) rotate(370deg) scale(.88); opacity:0; }
+}
+
+/* scroll progress */
+.progress{ position:fixed; top:0; left:0; right:0; height:2px; z-index:830; }
+.progress i{
+  display:block; height:100%; width:0; transform-origin:left;
+  background:linear-gradient(90deg,var(--gold-dk),var(--gold-lt) 55%,var(--gold));
+  box-shadow:0 0 14px rgba(230,206,149,.75);
+}
+
+/* ── LOADER ─────────────────────────────────────────────────────────────── */
+.loader{
+  position:fixed; inset:0; z-index:9999; display:grid; place-items:center;
+  background:linear-gradient(165deg,#FFFDF8,#F3E7D2 60%,#EADBBF);
+  transition:opacity 1.1s var(--out), visibility 1.1s;
+  animation:loaderFailsafe 1s ease 5s forwards;
+}
+.loader.done{ opacity:0; visibility:hidden; animation:none; }
+@keyframes loaderFailsafe{ to{ opacity:0; visibility:hidden; } }
+.loader-in{ text-align:center; }
+.loader-ring{ width:112px; margin:0 auto 20px; color:var(--gold); }
+.loader-ring svg{ width:100%; height:auto; }
+.loader-ring .rot{ transform-origin:100px 100px; animation:spin 14s linear infinite; }
+@keyframes spin{ to{ transform:rotate(360deg); } }
+.loader-mono{
+  font-family:var(--serif); font-size:1.5rem; color:var(--maroon);
+  letter-spacing:.42em; text-indent:.42em;
+}
+.loader-bar{
+  width:130px; height:1px; margin:18px auto 0;
+  background:rgba(194,155,84,.26); position:relative; overflow:hidden;
+}
+.loader-bar::after{
+  content:""; position:absolute; inset:0; transform:translateX(-100%);
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  animation:sweep 1.5s var(--inout) infinite;
+}
+@keyframes sweep{ to{ transform:translateX(100%); } }
+
+/* ── ANIMATION ENGINE ───────────────────────────────────────────────────── */
+/* Everything animated shares one observer and one easing family.            */
+
+.js [data-anim]{ will-change:transform,opacity; }
+
+/* fade + rise */
+.js [data-anim="up"]{ opacity:0; transform:translate3d(0,34px,0); transition:opacity 1.15s var(--out), transform 1.15s var(--out); }
+.js [data-anim="fade"]{ opacity:0; transition:opacity 1.4s var(--soft); }
+.js [data-anim="scale"]{ opacity:0; transform:scale(.94); transition:opacity 1.2s var(--out), transform 1.2s var(--out); }
+.js [data-anim="left"]{ opacity:0; transform:translate3d(-38px,0,0); transition:opacity 1.2s var(--out), transform 1.2s var(--out); }
+.js [data-anim="right"]{ opacity:0; transform:translate3d(38px,0,0); transition:opacity 1.2s var(--out), transform 1.2s var(--out); }
+.js [data-anim="blur"]{ opacity:0; filter:blur(12px); transform:scale(1.03); transition:opacity 1.5s var(--soft), filter 1.5s var(--soft), transform 1.5s var(--soft); }
+
+.js [data-anim].in{ opacity:1; transform:none; filter:none; }
+
+/* typographic mask — the line slides up from behind its own edge */
+.mask{ overflow:hidden; display:block; }
+.mask > span{ display:block; }
+.js .mask > span{
+  transform:translate3d(0,112%,0) rotate(2deg); opacity:0;
+  transition:transform 1.25s var(--out), opacity .9s var(--soft);
+}
+.js .mask.in > span{ transform:none; opacity:1; }
+
+/* stagger: a parent hands each child an index */
+[data-stagger] > *{ transition-delay:calc(var(--i,0) * var(--step, 90ms)); }
+
+/* SVG line-draw for ornaments */
+.js .draw path,.js .draw circle,.js .draw line{
+  stroke-dasharray:var(--len,300); stroke-dashoffset:var(--len,300);
+  transition:stroke-dashoffset 1.6s var(--soft), fill-opacity .8s ease .6s;
+}
+.js .draw.in path,.js .draw.in circle,.js .draw.in line{ stroke-dashoffset:0; }
+.js .draw [fill="currentColor"]{ fill-opacity:0; }
+.js .draw.in [fill="currentColor"]{ fill-opacity:1; }
+
+@media (prefers-reduced-motion:reduce){
+  .js [data-anim],.js .mask > span{ opacity:1 !important; transform:none !important; filter:none !important; transition:none !important; }
+  .js .draw path,.js .draw circle,.js .draw line{ stroke-dashoffset:0 !important; }
+  .js .draw [fill="currentColor"]{ fill-opacity:1 !important; }
+  .petals,.grain{ display:none; }
+  html{ scroll-behavior:auto; }
+  .hero-bg img{ animation:none !important; }
+}
+
+/* ── ORNAMENTS ──────────────────────────────────────────────────────────── */
+.orn{ margin:0 auto 1.1rem; width:46px; color:var(--gold); }
+.orn svg,[data-orn] svg{ width:100%; height:auto; display:block; }
+.rule{ width:min(280px,64vw); margin:1.3rem auto; color:var(--gold); }
+
+/* ── SECTION SHELL ──────────────────────────────────────────────────────── */
+.section{ position:relative; padding:clamp(5rem,11vw,9rem) 1.5rem; }
+.wrap{ max-width:var(--maxw); margin:0 auto; }
+.head{ text-align:center; margin-bottom:clamp(2.6rem,6vw,4rem); }
+.head h2{
+  font-family:var(--serif); font-weight:400;
+  font-size:clamp(1.9rem,5.6vw,3.2rem);
+  color:var(--maroon); letter-spacing:.015em; line-height:1.15;
+}
+.eyebrow{
+  font-size:clamp(.58rem,1.6vw,.68rem); letter-spacing:.42em;
+  text-transform:uppercase; color:var(--gold-dk); margin-bottom:1rem;
+}
+.fine{
+  font-size:.8rem; color:var(--ink-mute); text-align:center;
+  max-width:58ch; margin:1.6rem auto 0; line-height:1.65;
+}
+
+/* soft gradient joins so sections melt into each other */
+.tint-a{ background:linear-gradient(180deg,#FFFDF8,#F8F0E1); }
+.tint-b{ background:linear-gradient(180deg,#F8F0E1,#FCF8F0); }
+.tint-c{ background:linear-gradient(180deg,#FCF8F0,#F2E7D4); }
+
+/* ── HERO ───────────────────────────────────────────────────────────────── */
+.hero{
+  position:relative; min-height:100svh; display:grid; place-items:center;
+  text-align:center; overflow:hidden; isolation:isolate;
+  padding:7rem 1.5rem 6rem;
+}
+.hero-bg{ position:absolute; inset:-6% -2%; z-index:-2; background:linear-gradient(155deg,#6E1329,#330815); }
+.hero-bg img{
+  width:100%; height:100%; object-fit:cover;
+  opacity:0; transform:scale(1.08);
+  transition:opacity 2.4s var(--soft), transform 2.6s var(--out);
+}
+.hero-bg img.loaded{ opacity:.6; transform:scale(1); animation:drift 34s ease-in-out infinite alternate 2.6s; }
+@keyframes drift{
+  from{ transform:scale(1) translate3d(0,0,0); }
+  to  { transform:scale(1.12) translate3d(-1.8%,-1.2%,0); }
+}
+.hero-veil{
+  position:absolute; inset:0;
+  background:
+    radial-gradient(ellipse 90% 70% at 50% 46%, rgba(30,6,14,.05), rgba(30,6,14,.55) 70%, rgba(26,5,12,.86) 100%),
+    linear-gradient(180deg, rgba(26,5,12,.55), transparent 26%, transparent 60%, rgba(26,5,12,.78));
+}
+
+.hero-corner{ position:absolute; width:clamp(96px,16vw,196px); color:var(--gold-lt); opacity:0; z-index:1; transition:opacity 1.8s var(--soft) .8s; }
+.loaded-page .hero-corner{ opacity:.5; }
+.hero-corner.tl{ top:26px; left:26px; }
+.hero-corner.tr{ top:26px; right:26px; transform:scaleX(-1); }
+.hero-corner.bl{ bottom:26px; left:26px; transform:scaleY(-1); }
+.hero-corner.br{ bottom:26px; right:26px; transform:scale(-1,-1); }
+@media (max-width:640px){ .hero-corner{ top:18px!important; bottom:18px!important; left:18px!important; right:18px!important; } .hero-corner.tl,.hero-corner.tr{ bottom:auto!important; } .hero-corner.bl,.hero-corner.br{ top:auto!important; } .hero-corner.tl,.hero-corner.bl{ right:auto!important; } .hero-corner.tr,.hero-corner.br{ left:auto!important; } }
+
+.hero-content{ position:relative; z-index:2; max-width:960px; }
+.hero-eyebrow{
+  font-size:clamp(.6rem,1.7vw,.74rem); letter-spacing:.5em; text-transform:uppercase;
+  color:var(--gold-lt); margin-bottom:1.9rem; opacity:.9;
+}
+.hero-names{
+  font-family:var(--serif); font-weight:400; color:#FFF8EB;
+  line-height:1; display:flex; flex-direction:column; align-items:center; gap:.18em;
+}
+.hero-names .nm{
+  font-size:clamp(2.5rem,10.4vw,6.6rem); letter-spacing:.1em;
+  display:flex; justify-content:center; flex-wrap:wrap;
+  text-shadow:0 14px 50px rgba(0,0,0,.5);
+}
+/* per-letter entrance */
+.ltr{ display:inline-block; opacity:0; transform:translate3d(0,.55em,0) rotate(4deg); }
+.loaded-page .ltr{
+  opacity:1; transform:none;
+  transition:opacity 1.1s var(--soft), transform 1.25s var(--out);
+  transition-delay:calc(var(--d,0) * 42ms + 260ms);
+}
+.hero-amp{
+  color:var(--gold-lt); font-size:clamp(1rem,3.2vw,1.9rem);
+  margin:.7em 0 .6em; letter-spacing:.3em; line-height:1;
+  opacity:0; transform:scale(.6);
+}
+.loaded-page .hero-amp{
+  opacity:1; transform:none;
+  transition:opacity 1s var(--soft) .9s, transform 1.1s var(--out) .9s;
+}
+.hero-amp span{ display:inline-block; animation:pulse 4.5s ease-in-out infinite 2.4s; }
+@keyframes pulse{ 0%,100%{ transform:scale(1); } 50%{ transform:scale(1.14); } }
+
+.hero-rule{ width:min(320px,70vw); margin:2rem auto 1.7rem; color:var(--gold-lt); opacity:0; }
+.loaded-page .hero-rule{ opacity:.85; transition:opacity 1.2s var(--soft) 1.15s; }
+
+.hero-sub{
+  font-family:var(--serif2); font-style:italic; font-weight:300;
+  font-size:clamp(1.05rem,3vw,1.5rem); line-height:1.55;
+  color:rgba(255,248,235,.9); max-width:26ch; margin:0 auto;
+  opacity:0; transform:translateY(16px);
+}
+.loaded-page .hero-sub{ opacity:1; transform:none; transition:opacity 1.2s var(--soft) 1.3s, transform 1.2s var(--out) 1.3s; }
+
+.hero-date{
+  margin-top:1.8rem; color:var(--gold-lt); opacity:0;
+  font-size:clamp(.66rem,2vw,.8rem); letter-spacing:.34em; text-transform:uppercase;
+}
+.loaded-page .hero-date{ opacity:.92; transition:opacity 1.2s var(--soft) 1.5s; }
+
+.cue{
+  position:absolute; bottom:38px; left:50%; z-index:3;
+  transform:translateX(-50%); text-decoration:none; opacity:0;
+  display:flex; flex-direction:column; align-items:center; gap:.85rem;
+  font-size:.6rem; letter-spacing:.34em; text-transform:uppercase;
+  color:rgba(255,248,235,.62);
+}
+.loaded-page .cue{ opacity:1; transition:opacity 1.4s var(--soft) 2s; }
+.cue .line{ width:1px; height:46px; background:linear-gradient(var(--gold-lt),transparent); position:relative; overflow:hidden; }
+.cue .line::after{
+  content:""; position:absolute; top:-46px; left:0; width:1px; height:46px;
+  background:linear-gradient(transparent,var(--gold-lt));
+  animation:trickle 2.4s var(--inout) infinite;
+}
+@keyframes trickle{ 0%{ transform:translateY(0); } 100%{ transform:translateY(92px); } }
+
+/* ── COUNTDOWN ──────────────────────────────────────────────────────────── */
+.count-sec{
+  position:relative; overflow:hidden;
+  background:linear-gradient(158deg,#4E0D1E,#6E1329 48%,#3A0917);
+  color:#FFF8EB;
+}
+.count-sec .head h2{ color:#FFF8EB; }
+.count-sec .eyebrow{ color:var(--gold-lt); opacity:.8; }
+.count-sec .orn,.count-sec .rule{ color:var(--gold-lt); }
+.count-sec::before{
+  content:""; position:absolute; inset:0; opacity:.1; pointer-events:none;
+  background-image:
+    radial-gradient(circle at 25% 25%, var(--gold-lt) .9px, transparent 1.3px),
+    radial-gradient(circle at 75% 75%, var(--gold-lt) .9px, transparent 1.3px);
+  background-size:58px 58px, 82px 82px;
+}
+/* slow gold aurora behind the cards */
+.count-sec::after{
+  content:""; position:absolute; left:50%; top:50%; width:150%; aspect-ratio:1;
+  transform:translate(-50%,-50%); pointer-events:none; opacity:.16;
+  background:radial-gradient(circle, rgba(230,206,149,.7), transparent 62%);
+  animation:aurora 16s ease-in-out infinite alternate;
+}
+@keyframes aurora{
+  from{ transform:translate(-54%,-52%) scale(.9); opacity:.1; }
+  to  { transform:translate(-46%,-48%) scale(1.1); opacity:.22; }
+}
+
+.count{
+  position:relative; z-index:2;
+  display:grid; grid-template-columns:repeat(4,1fr);
+  gap:clamp(.55rem,2vw,1.5rem); max-width:800px; margin:0 auto;
+}
+.cd{
+  position:relative; text-align:center; border-radius:2px;
+  padding:clamp(1.1rem,3.6vw,2.2rem) .4rem;
+  background:linear-gradient(160deg, rgba(255,248,235,.11), rgba(255,248,235,.04));
+  border:1px solid rgba(230,206,149,.28);
+  backdrop-filter:blur(14px) saturate(1.1); -webkit-backdrop-filter:blur(14px) saturate(1.1);
+  box-shadow:0 24px 56px -30px rgba(0,0,0,.8), inset 0 1px 0 rgba(255,248,235,.16);
+  overflow:hidden;
+  transition:border-color .7s var(--soft), transform .7s var(--out), box-shadow .7s var(--soft);
+}
+.cd::before{  /* slow light sweep across the glass */
+  content:""; position:absolute; top:0; bottom:0; width:45%;
+  background:linear-gradient(105deg, transparent, rgba(255,248,235,.14), transparent);
+  transform:translateX(-160%); animation:glass 7s var(--inout) infinite;
+  animation-delay:calc(var(--i,0) * .5s);
+}
+@keyframes glass{ 0%{ transform:translateX(-160%);} 45%,100%{ transform:translateX(320%);} }
+.cd:hover{ transform:translateY(-6px); border-color:rgba(230,206,149,.6); }
+
+.cd-num{
+  display:flex; justify-content:center; gap:.02em;
+  font-family:var(--serif); font-weight:400;
+  font-size:clamp(1.9rem,7.4vw,3.5rem); line-height:1;
+  color:#FFF8EB; font-variant-numeric:tabular-nums;
+  text-shadow:0 0 34px rgba(230,206,149,.34);
+}
+/* per-digit roll */
+.dg{ position:relative; display:inline-block; height:1em; overflow:hidden; min-width:.62em; }
+.dg i{ display:block; font-style:normal; transition:transform .62s var(--out), opacity .62s var(--soft); }
+.dg i.nxt{ position:absolute; inset:0; transform:translateY(100%); opacity:0; }
+.dg.go i.cur{ transform:translateY(-100%); opacity:0; }
+.dg.go i.nxt{ transform:none; opacity:1; }
+.cd-lbl{
+  display:block; margin-top:.8rem;
+  font-size:clamp(.5rem,1.6vw,.62rem); letter-spacing:.3em;
+  text-transform:uppercase; color:var(--gold-lt); opacity:.82;
+}
+.count-note{
+  position:relative; z-index:2; text-align:center; margin-top:2.2rem;
+  font-family:var(--serif2); font-style:italic; font-size:1.1rem;
+  color:rgba(255,248,235,.78);
+}
+
+/* ── GALLERY ────────────────────────────────────────────────────────────── */
+/* Every tile is the same 4:5 portrait frame, whatever shape the photo is.
+   The photo fills it and the overflow is cropped, centred.                   */
+/* Flex rather than grid so an incomplete last row centres itself
+   instead of hugging the left edge.                                          */
+.masonry{
+  --cols:3; --gap:16px;
+  display:flex; flex-wrap:wrap; justify-content:center; align-items:flex-start;
+  gap:var(--gap);
+}
+.tile{
+  flex:0 0 calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  max-width:calc((100% - (var(--cols) - 1) * var(--gap)) / var(--cols));
+  position:relative; margin:0; aspect-ratio:4/5;
+  overflow:hidden; cursor:zoom-in; background:var(--beige);
+  box-shadow:var(--sh-1);
+  opacity:0; transform:translate3d(0,40px,0) scale(.97);
+  transition:opacity 1.1s var(--out), transform 1.1s var(--out), box-shadow .6s var(--soft);
+}
+.no-js .tile{ opacity:1; transform:none; }
+.tile.in{ opacity:1; transform:none; }
+.tile:hover{ box-shadow:var(--sh-3); }
+.tile img{
+  width:100%; height:100%;
+  object-fit:cover; object-position:center;
+  transition:transform 1.5s var(--out), filter .8s var(--soft);
+}
+.tile:hover img{ transform:scale(1.08); filter:saturate(1.06) contrast(1.03); }
+/* the placeholder card already matches the frame */
+.tile .ph{ width:100%; height:100%; aspect-ratio:auto; }
+/* gold frame that draws itself on hover */
+.tile::after{
+  content:""; position:absolute; inset:12px; pointer-events:none;
+  border:1px solid rgba(243,230,198,.75); opacity:0; transform:scale(1.04);
+  transition:opacity .6s var(--soft), transform .8s var(--out);
+}
+.tile:hover::after{ opacity:1; transform:none; }
+.tile::before{
+  content:""; position:absolute; inset:0; z-index:1; pointer-events:none;
+  background:linear-gradient(to top, rgba(46,7,17,.5), transparent 48%);
+  opacity:0; transition:opacity .6s var(--soft);
+}
+.tile:hover::before{ opacity:1; }
+.tile figcaption{
+  position:absolute; left:24px; right:24px; bottom:22px; z-index:2;
+  color:#FFF8EB; font-family:var(--serif2); font-style:italic; font-size:1rem;
+  opacity:0; transform:translateY(14px);
+  transition:opacity .6s var(--soft), transform .7s var(--out);
+}
+.tile:hover figcaption{ opacity:1; transform:none; }
+.tile.hidden{ display:none; }
+.more-wrap{ text-align:center; margin-top:2.6rem; }
+
+/* ── FILM ───────────────────────────────────────────────────────────────── */
+.film-sec{ background:linear-gradient(170deg,#3A0917,#4E0D1E 46%,#2E0711); color:#FFF8EB; }
+.film-sec .head h2{ color:#FFF8EB; }
+.film-sec .eyebrow{ color:var(--gold-lt); opacity:.8; }
+.film-sec .orn,.film-sec .rule{ color:var(--gold-lt); }
+.film-sec .fine{ color:rgba(255,248,235,.5); }
+.film{
+  position:relative; max-width:980px; margin:0 auto; aspect-ratio:16/9;
+  overflow:hidden; background:#25050E;
+  border:1px solid rgba(230,206,149,.3);
+  box-shadow:0 50px 110px -50px rgba(0,0,0,.95);
+}
+.film iframe,.film video{ width:100%; height:100%; border:0; display:block; background:#000; }
+.poster{ position:absolute; inset:0; cursor:pointer; }
+.poster img{ width:100%; height:100%; object-fit:cover; opacity:.66; transition:transform 2s var(--out), opacity .9s var(--soft); }
+.poster:hover img{ transform:scale(1.06); opacity:.8; }
+.play{
+  position:absolute; inset:0; display:grid; place-items:center; z-index:2;
+  width:96px; height:96px; margin:auto; border-radius:50%;
+  border:1px solid rgba(230,206,149,.6);
+  background:rgba(255,248,235,.08); backdrop-filter:blur(10px);
+  transition:transform .8s var(--out), background .6s var(--soft), border-color .6s;
+}
+.play::before{
+  content:""; width:0; height:0; margin-left:7px;
+  border-left:23px solid #FFF8EB; border-top:14px solid transparent; border-bottom:14px solid transparent;
+  transition:border-left-color .5s;
+}
+.play::after{
+  content:""; position:absolute; inset:-1px; border-radius:50%;
+  border:1px solid rgba(230,206,149,.5); animation:ring 3s var(--soft) infinite;
+}
+@keyframes ring{ 0%{ transform:scale(1); opacity:.8; } 100%{ transform:scale(1.45); opacity:0; } }
+.poster:hover .play{ transform:scale(1.09); background:rgba(230,206,149,.22); border-color:var(--gold-lt); }
+.film-cap{
+  position:absolute; left:0; right:0; bottom:24px; z-index:2; text-align:center;
+  font-size:.62rem; letter-spacing:.4em; text-transform:uppercase; color:var(--gold-lt); opacity:.75;
+}
+
+/* ── EVENTS ─────────────────────────────────────────────────────────────── */
+.events{
+  display:grid; gap:clamp(1.2rem,3vw,2rem);
+  grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+  max-width:900px; margin:0 auto;
+}
+.ev{
+  position:relative; text-align:center; overflow:hidden;
+  padding:clamp(2.2rem,5vw,3.2rem) 1.6rem;
+  background:rgba(255,253,248,.78);
+  border:1px solid rgba(194,155,84,.3);
+  backdrop-filter:blur(8px);
+  box-shadow:var(--sh-2);
+  transform-style:preserve-3d;
+  transition:transform .7s var(--out), box-shadow .7s var(--soft), border-color .7s;
+}
+.ev:hover{ box-shadow:var(--sh-3); border-color:rgba(194,155,84,.6); }
+.ev.primary::before{
+  content:""; position:absolute; top:0; left:0; right:0; height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent);
+  transform:scaleX(0); transform-origin:center;
+  transition:transform 1.4s var(--out) .3s;
+}
+.ev.primary.in::before{ transform:scaleX(1); }
+.ev-icon{ width:54px; height:54px; margin:0 auto 1.3rem; color:var(--gold-dk); display:grid; place-items:center; }
+.ev-icon svg{ max-height:54px; }
+.ev h3{
+  font-family:var(--serif); font-weight:400; color:var(--maroon);
+  font-size:clamp(1.3rem,3.6vw,1.75rem); letter-spacing:.02em;
+}
+.ev-tag{ font-size:.58rem; letter-spacing:.34em; text-transform:uppercase; color:var(--gold-dk); margin-top:.5rem; }
+.ev dl{ margin:1.6rem 0 0; display:grid; gap:.95rem; }
+.ev dt{ font-size:.55rem; letter-spacing:.3em; text-transform:uppercase; color:var(--ink-mute); }
+.ev dd{ margin:.2rem 0 0; font-family:var(--serif2); font-size:1.1rem; color:var(--ink); line-height:1.5; }
+.ev-map{
+  display:inline-block; margin-top:1.7rem; text-decoration:none;
+  font-size:.62rem; letter-spacing:.26em; text-transform:uppercase; color:var(--maroon-2);
+  padding-bottom:5px; position:relative;
+}
+.ev-map::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:1px;
+  background:var(--gold); transform-origin:right; transition:transform .6s var(--out);
+}
+.ev-map:hover::after{ transform:scaleX(0); transform-origin:left; }
+
+/* the engagement — already happened, so it recedes */
+.ev.past{
+  background:rgba(255,253,248,.4);
+  border-style:dashed; border-color:rgba(194,155,84,.34);
+  box-shadow:none;
+}
+.ev.past .ev-icon{ color:var(--ink-mute); }
+.ev.past h3{ color:var(--wine); font-size:clamp(1.15rem,3vw,1.45rem); }
+.ev.past .ev-done{
+  font-family:var(--serif2); font-size:1.05rem; color:var(--ink-soft);
+  margin-top:1.2rem; font-style:italic;
+}
+.ev.past:hover{ box-shadow:var(--sh-1); }
+
+/* ── VENUE ──────────────────────────────────────────────────────────────── */
+.venue{
+  position:relative; max-width:700px; margin:0 auto; text-align:center;
+  padding:clamp(2.8rem,7vw,4.4rem) clamp(1.5rem,5vw,3.4rem);
+  background:var(--ivory); border:1px solid rgba(194,155,84,.34);
+  box-shadow:var(--sh-3); overflow:hidden;
+}
+.venue-mandala{
+  position:absolute; right:-68px; top:-68px; width:220px; color:var(--gold);
+  opacity:.1; pointer-events:none; animation:spin 90s linear infinite;
+}
+.venue h3{ font-family:var(--serif); font-weight:400; font-size:clamp(1.6rem,4.6vw,2.3rem); color:var(--maroon); }
+.venue-addr{
+  font-family:var(--serif2); font-size:clamp(1.02rem,2.6vw,1.2rem);
+  color:var(--ink-soft); margin-top:.8rem; max-width:34ch; margin-inline:auto;
+}
+.venue-meta{ display:flex; justify-content:center; gap:clamp(1.8rem,7vw,4rem); margin:2.2rem 0 2.4rem; flex-wrap:wrap; }
+.venue-meta .k{ display:block; font-size:.55rem; letter-spacing:.3em; text-transform:uppercase; color:var(--gold-dk); margin-bottom:.45rem; }
+.venue-meta .v{ font-family:var(--serif); font-size:1.14rem; color:var(--maroon); }
+
+/* ── BUTTONS ────────────────────────────────────────────────────────────── */
+.btn{
+  position:relative; display:inline-flex; align-items:center; justify-content:center;
+  gap:.7rem; padding:1rem 2.2rem; overflow:hidden; text-decoration:none;
+  font-size:.66rem; letter-spacing:.28em; text-transform:uppercase;
+  border:1px solid var(--gold); color:var(--maroon); background:transparent;
+  transition:color .55s var(--soft), transform .5s var(--out), border-color .5s;
+}
+.btn span{ position:relative; z-index:2; }
+.btn::before{
+  content:""; position:absolute; inset:0; z-index:1;
+  background:linear-gradient(120deg,var(--gold-dk),var(--gold-lt));
+  transform:translateY(101%); transition:transform .6s var(--out);
+}
+.btn:hover{ color:#2E1A06; transform:translateY(-2px); }
+.btn:hover::before{ transform:none; }
+.btn.on-dark{ color:var(--gold-lt); border-color:rgba(230,206,149,.6); }
+.btn.on-dark:hover{ color:#2E1A06; }
+
+/* ── FAMILIES ───────────────────────────────────────────────────────────── */
+.fams{ display:grid; grid-template-columns:1fr auto 1fr; gap:clamp(1.2rem,4vw,3rem); align-items:stretch; }
+.fam{
+  position:relative; text-align:center; overflow:hidden;
+  padding:clamp(2.2rem,4.6vw,3rem) 1.6rem;
+  background:rgba(255,253,248,.8); border:1px solid rgba(194,155,84,.28);
+  box-shadow:var(--sh-2);
+}
+.fam-crest{
+  position:absolute; left:50%; top:-56px; transform:translateX(-50%);
+  width:180px; color:var(--gold); opacity:.12; pointer-events:none;
+}
+.fam h3{
+  font-family:var(--serif); font-weight:400; color:var(--wine);
+  font-size:clamp(1.05rem,2.9vw,1.32rem); letter-spacing:.05em; margin-bottom:1.5rem;
+}
+.fam-names p{ font-family:var(--serif2); font-size:clamp(1.08rem,2.8vw,1.28rem); color:var(--ink); line-height:1.65; margin-bottom:.9rem; }
+.fam-names .rel{ display:block; font-family:var(--sans); font-size:.54rem; letter-spacing:.28em; text-transform:uppercase; color:var(--ink-mute); margin-top:.1rem; }
+.fam-addr{
+  margin-top:1.7rem; padding-top:1.5rem; position:relative;
+  font-family:var(--serif2); font-size:.99rem; color:var(--ink-soft); line-height:1.7;
+}
+.fam-addr::before{
+  content:""; position:absolute; top:0; left:50%; transform:translateX(-50%);
+  width:56px; height:1px; background:rgba(194,155,84,.5);
+}
+.fam-tel{ margin-top:1.1rem; display:flex; flex-direction:column; gap:.3rem; align-items:center; }
+.fam-tel a{
+  text-decoration:none; font-family:var(--sans); font-size:.82rem;
+  letter-spacing:.14em; color:var(--maroon-2);
+  padding:.14rem 0; position:relative; transition:color .4s;
+}
+.fam-tel a::after{
+  content:""; position:absolute; left:0; right:0; bottom:0; height:1px;
+  background:var(--gold); transform:scaleX(0); transform-origin:left;
+  transition:transform .5s var(--out);
+}
+.fam-tel a:hover{ color:var(--gold-dk); }
+.fam-tel a:hover::after{ transform:scaleX(1); }
+.fam-sep{ width:42px; color:var(--gold); align-self:center; transform:rotate(90deg); }
+@media (max-width:840px){
+  .fams{ grid-template-columns:1fr; }
+  .fam-sep{ transform:none; width:min(230px,62vw); margin:0 auto; }
+}
+
+/* ── INVITATION ─────────────────────────────────────────────────────────── */
+.invite-sec{
+  position:relative; overflow:hidden;
+  background:linear-gradient(162deg,#4E0D1E,#6E1329 52%,#3A0917);
+  color:#FFF8EB;
+}
+.invite-sec::before{
+  content:""; position:absolute; inset:0; opacity:.07; pointer-events:none;
+  background-image:
+    repeating-linear-gradient(45deg, rgba(230,206,149,.5) 0 1px, transparent 1px 22px),
+    repeating-linear-gradient(-45deg, rgba(230,206,149,.5) 0 1px, transparent 1px 22px);
+}
+.invite{ position:relative; max-width:780px; margin:0 auto; padding:12px; }
+.invite-frame{ position:absolute; inset:0; pointer-events:none; }
+.invite-frame rect{ fill:none; stroke:rgba(230,206,149,.65); stroke-width:1; }
+.js .invite-frame rect{ stroke-dasharray:var(--p,2000); stroke-dashoffset:var(--p,2000); transition:stroke-dashoffset 2.6s var(--soft); }
+.js .invite-frame.in rect{ stroke-dashoffset:0; }
+.invite-in{
+  position:relative; text-align:center;
+  padding:clamp(3rem,8vw,5rem) clamp(1.6rem,6vw,4rem);
+  background:radial-gradient(ellipse at 50% 0%, rgba(230,206,149,.1), transparent 62%);
+}
+.invite-in .orn,.invite-in .rule{ color:var(--gold-lt); }
+.invite-text{
+  font-family:var(--serif2); font-style:italic; font-weight:300;
+  font-size:clamp(1.18rem,3.4vw,1.78rem); line-height:1.75;
+  color:rgba(255,248,235,.94); max-width:36ch; margin:0 auto;
+}
+.invite-couple{
+  font-family:var(--serif); font-weight:400; font-size:clamp(1.7rem,6vw,2.8rem);
+  color:#FFF8EB; letter-spacing:.08em;
+}
+.invite-couple .amp{ color:var(--gold-lt); }
+
+/* ── CLOSING ────────────────────────────────────────────────────────────── */
+.closing{
+  position:relative; min-height:100svh; display:grid; place-items:center;
+  text-align:center; overflow:hidden; padding:7rem 1.5rem;
+}
+.closing-bg{ position:absolute; inset:-5%; z-index:-2; background:linear-gradient(158deg,#3A0917,#22050D); }
+.closing-bg img{
+  width:100%; height:100%; object-fit:cover; opacity:0; transform:scale(1.1);
+  transition:opacity 2.2s var(--soft), transform 2.4s var(--out);
+}
+.closing-bg img.loaded{ opacity:.46; transform:scale(1); animation:drift 40s ease-in-out infinite alternate 2.4s; }
+.closing-veil{ position:absolute; inset:0; background:radial-gradient(ellipse 85% 70% at 50% 50%, rgba(22,5,13,.2), rgba(22,5,13,.86) 76%); }
+.closing-in{ position:relative; z-index:2; max-width:780px; }
+.closing-l1{ font-family:var(--serif); font-weight:400; color:#FFF8EB; font-size:clamp(1.9rem,7vw,3.4rem); letter-spacing:.05em; }
+.closing-l1 .amp{ color:var(--gold-lt); }
+.closing-l2{ font-family:var(--serif2); font-size:clamp(1.1rem,3.4vw,1.6rem); color:var(--gold-lt); letter-spacing:.24em; margin-top:1rem; }
+.closing-l3{ font-size:clamp(.6rem,2vw,.72rem); letter-spacing:.44em; text-transform:uppercase; color:rgba(255,248,235,.58); margin-top:.9rem; }
+.closing-thanks{
+  font-family:var(--serif2); font-style:italic; margin-top:2.4rem;
+  font-size:clamp(1rem,2.8vw,1.26rem); color:rgba(255,248,235,.8);
+  max-width:34ch; margin-inline:auto; line-height:1.7;
+}
+
+/* ── FOOTER ─────────────────────────────────────────────────────────────── */
+.foot{ text-align:center; padding:3.4rem 1.5rem 4rem; background:#22050D; color:rgba(255,248,235,.6); }
+.foot .orn{ color:var(--gold); opacity:.6; width:34px; }
+.foot-nm{ font-family:var(--serif); font-size:1.22rem; color:#FFF8EB; letter-spacing:.16em; }
+.foot-pl{ font-size:.58rem; letter-spacing:.32em; text-transform:uppercase; margin-top:.6rem; opacity:.5; }
+
+/* ── PLACEHOLDER ────────────────────────────────────────────────────────── */
+.ph{
+  display:grid; place-items:center; text-align:center; gap:.7rem;
+  aspect-ratio:4/5; padding:1.6rem;
+  background:
+    repeating-linear-gradient(45deg, rgba(194,155,84,.055) 0 12px, transparent 12px 24px),
+    linear-gradient(158deg,#F7EDDC,#EADCC2);
+  border:1px solid rgba(194,155,84,.3); color:var(--wine);
+}
+.ph-mark{ width:44px; color:var(--gold); opacity:.8; }
+.ph-t{ font-family:var(--serif); font-size:1.02rem; color:var(--maroon); }
+.ph-s{ font-size:.58rem; letter-spacing:.24em; text-transform:uppercase; color:var(--ink-mute); }
+.film .ph,.poster .ph{ width:100%; height:100%; aspect-ratio:auto; }
+
+.shimmer{
+  background:linear-gradient(100deg,#EFE3CE 28%,#FAF3E5 50%,#EFE3CE 72%);
+  background-size:220% 100%; animation:shim 1.8s linear infinite;
+}
+@keyframes shim{ to{ background-position:-220% 0; } }
+
+/* ── MUSIC BUTTON ───────────────────────────────────────────────────────── */
+.music{
+  position:fixed; right:26px; bottom:26px; z-index:840;
+  width:56px; height:56px; border-radius:50%; display:grid; place-items:center;
+  border:1px solid rgba(194,155,84,.55); background:rgba(255,253,248,.84);
+  backdrop-filter:blur(12px); box-shadow:var(--sh-2);
+  transition:transform .55s var(--out), border-color .5s, background .5s;
+}
+.music:hover{ transform:scale(1.09); }
+.eq{ display:flex; align-items:flex-end; gap:3px; height:20px; }
+.eq i{ display:block; width:2.5px; height:5px; background:var(--maroon); transition:height .3s; }
+.music.on .eq i{ animation:bounce 1s var(--inout) infinite; }
+.music.on .eq i:nth-child(2){ animation-delay:.14s; }
+.music.on .eq i:nth-child(3){ animation-delay:.28s; }
+.music.on .eq i:nth-child(4){ animation-delay:.42s; }
+.music.on{ border-color:var(--gold); }
+.music.on::after{ content:""; position:absolute; inset:-5px; border-radius:50%; border:1px solid rgba(194,155,84,.5); animation:ring 2.4s var(--soft) infinite; }
+@keyframes bounce{ 0%,100%{ height:4px; } 50%{ height:18px; } }
+@media (max-width:640px){ .music{ right:18px; bottom:18px; width:50px; height:50px; } }
+
+/* ── LIGHTBOX ───────────────────────────────────────────────────────────── */
+.lb{
+  position:fixed; inset:0; z-index:1000; display:grid; place-items:center;
+  background:rgba(20,4,10,.0); backdrop-filter:blur(0px);
+  transition:background .7s var(--soft), backdrop-filter .7s var(--soft);
+}
+.lb.open{ background:rgba(20,4,10,.95); backdrop-filter:blur(18px); }
+.lb-stage{ margin:0; display:grid; place-items:center; gap:1.2rem; max-width:94vw; }
+.lb-stage img{
+  max-width:94vw; max-height:78svh; width:auto; height:auto;
+  box-shadow:0 50px 110px -40px rgba(0,0,0,.9);
+}
+.lb-cap{
+  font-family:var(--serif2); font-style:italic; font-size:1.02rem;
+  color:rgba(255,248,235,.68); text-align:center;
+  opacity:0; transform:translateY(10px); transition:.7s var(--out) .25s;
+}
+.lb.open .lb-cap{ opacity:1; transform:none; }
+.lb-btn{
+  position:absolute; z-index:3; display:grid; place-items:center; border-radius:50%;
+  border:1px solid rgba(230,206,149,.34); background:rgba(255,248,235,.07);
+  color:#FFF8EB; backdrop-filter:blur(10px);
+  opacity:0; transition:opacity .6s var(--soft) .2s, background .4s, transform .5s var(--out);
+}
+.lb.open .lb-btn{ opacity:1; }
+.lb-btn:hover{ background:rgba(230,206,149,.26); }
+.lb-x{ top:26px; right:26px; width:48px; height:48px; font-size:1.7rem; line-height:0; }
+.lb-p,.lb-n{ top:50%; margin-top:-26px; width:52px; height:52px; font-size:2rem; line-height:0; }
+.lb-p{ left:24px; } .lb-n{ right:24px; }
+.lb-p:hover{ transform:translateX(-4px); } .lb-n:hover{ transform:translateX(4px); }
+.lb-count{
+  position:absolute; bottom:28px; left:50%; transform:translateX(-50%);
+  color:var(--gold-lt); font-size:.62rem; letter-spacing:.3em; opacity:0;
+  transition:opacity .6s var(--soft) .3s;
+}
+.lb.open .lb-count{ opacity:.8; }
+@media (max-width:680px){
+  .lb-p,.lb-n{ width:42px; height:42px; font-size:1.6rem; }
+  .lb-p{ left:10px; } .lb-n{ right:10px; }
+  .lb-x{ top:14px; right:14px; width:42px; height:42px; }
+}
+
+/* ── VIDEO MODAL ────────────────────────────────────────────────────────── */
+.vm{
+  position:fixed; inset:0; z-index:1000; display:grid; place-items:center;
+  padding:clamp(1rem,5vw,3rem); background:rgba(16,3,8,0); backdrop-filter:blur(0);
+  transition:background .6s var(--soft), backdrop-filter .6s var(--soft);
+}
+.vm.open{ background:rgba(16,3,8,.96); backdrop-filter:blur(16px); }
+.vm-stage{
+  width:min(1120px,94vw); aspect-ratio:16/9; overflow:hidden; background:#000;
+  border:1px solid rgba(230,206,149,.3); box-shadow:0 60px 120px -50px rgba(0,0,0,.95);
+  transform:scale(.94); opacity:0; transition:transform .7s var(--out), opacity .6s var(--soft);
+}
+.vm.open .vm-stage{ transform:none; opacity:1; }
+.vm-stage iframe,.vm-stage video{ width:100%; height:100%; border:0; display:block; }
+.vm-x{
+  position:absolute; top:24px; right:24px; z-index:3; width:48px; height:48px;
+  border-radius:50%; font-size:1.7rem; line-height:0; display:grid; place-items:center;
+  border:1px solid rgba(230,206,149,.34); background:rgba(255,248,235,.07);
+  color:#FFF8EB; backdrop-filter:blur(10px);
+}
+.vm-x:hover{ background:rgba(230,206,149,.26); }
+
+/* ── TOAST ──────────────────────────────────────────────────────────────── */
+.toast{
+  position:fixed; left:50%; bottom:30px; z-index:1100;
+  transform:translate(-50%,30px); max-width:min(440px,90vw);
+  padding:.95rem 1.5rem; background:rgba(34,5,13,.96); color:#FFF8EB;
+  border:1px solid rgba(230,206,149,.38); font-size:.82rem; text-align:center;
+  box-shadow:var(--sh-3); opacity:0; pointer-events:none;
+  transition:opacity .55s var(--soft), transform .55s var(--out);
+}
+.toast.show{ opacity:1; transform:translate(-50%,0); }
+
+body.lock{ overflow:hidden; }
+
+/* ── RESPONSIVE ─────────────────────────────────────────────────────────── */
+@media (max-width:900px){ .masonry{ --cols:2; --gap:12px; } }
+@media (max-width:560px){
+  .masonry{ --cols:2; --gap:10px; }
+  .tile figcaption{ left:14px; right:14px; bottom:14px; font-size:.86rem; }
+  .count{ grid-template-columns:repeat(2,1fr); gap:.7rem; }
+  .section{ padding:4.4rem 1.25rem; }
+}
+
+@media print{
+  .petals,.grain,.music,.progress,.cue,.loader,.kasavu,.vignette{ display:none !important; }
+  body{ background:#fff; }
+  .js [data-anim],.js .mask > span{ opacity:1 !important; transform:none !important; }
+}
+</style>
+</head>
+
+<body class="no-js">
+
+<!-- ATMOSPHERE -->
+<div class="grain" aria-hidden="true"></div>
+<div class="vignette" aria-hidden="true"></div>
+<div class="kasavu" aria-hidden="true"></div>
+<div class="petals" id="petals" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"><i id="bar"></i></div>
+
+<!-- LOADER -->
+<div class="loader" id="loader">
+  <div class="loader-in">
+    <div class="loader-ring" data-orn="mandala"></div>
+    <div class="loader-mono">N &amp; S</div>
+    <div class="loader-bar"></div>
+  </div>
+</div>
+
+<!-- MUSIC -->
+<button class="music" id="musicBtn" type="button" aria-label="Play background music" hidden>
+  <span class="eq" aria-hidden="true"><i></i><i></i><i></i><i></i></span>
+</button>
+<audio id="audio" loop preload="none"></audio>
+
+<!-- ══════════ 1. OPENING ══════════ -->
+<header class="hero" id="top">
+  <div class="hero-bg"><img id="heroPhoto" alt="" aria-hidden="true"><div class="hero-veil"></div></div>
+
+  <div class="hero-corner tl" data-orn="corner"></div>
+  <div class="hero-corner tr" data-orn="corner"></div>
+  <div class="hero-corner bl" data-orn="corner"></div>
+  <div class="hero-corner br" data-orn="corner"></div>
+
+  <div class="hero-content" id="heroContent">
+    <p class="hero-eyebrow">The Wedding Of</p>
+    <h1 class="hero-names">
+      <span class="nm" id="nmBride"></span>
+      <span class="hero-amp"><span>&amp;</span></span>
+      <span class="nm" id="nmGroom"></span>
+    </h1>
+    <div class="hero-rule" data-orn="rule"></div>
+    <p class="hero-sub" id="heroSub"></p>
+    <p class="hero-date" id="heroDate"></p>
+  </div>
+
+  <a class="cue" href="#countdown" aria-label="Scroll down">
+    <span>Scroll</span>
+    <span class="line" aria-hidden="true"></span>
+  </a>
+</header>
+
+<main>
+
+<!-- ══════════ 2. COUNTDOWN ══════════ -->
+<section class="section count-sec" id="countdown">
+  <div class="wrap">
+    <div class="head">
+      <div class="orn draw" data-anim="fade" data-orn="lamp"></div>
+      <p class="eyebrow" data-anim="fade">The day ahead</p>
+      <h2 class="mask"><span>Until the Muhurtham</span></h2>
+      <div class="rule draw" data-anim="fade" data-orn="rule"></div>
+    </div>
+
+    <div class="count" data-stagger style="--step:110ms">
+      <div class="cd" data-anim="up" style="--i:0"><span class="cd-num" id="cdD"></span><span class="cd-lbl">Days</span></div>
+      <div class="cd" data-anim="up" style="--i:1"><span class="cd-num" id="cdH"></span><span class="cd-lbl">Hours</span></div>
+      <div class="cd" data-anim="up" style="--i:2"><span class="cd-num" id="cdM"></span><span class="cd-lbl">Minutes</span></div>
+      <div class="cd" data-anim="up" style="--i:3"><span class="cd-num" id="cdS"></span><span class="cd-lbl">Seconds</span></div>
+    </div>
+
+    <p class="count-note" id="cdNote" data-anim="fade"></p>
+  </div>
+</section>
+
+<!-- ══════════ 3. PHOTOGRAPHS ══════════ -->
+<section class="section tint-a" id="photographs">
+  <div class="wrap">
+    <div class="head">
+      <div class="orn draw" data-anim="fade" data-orn="lamp"></div>
+      <p class="eyebrow" data-anim="fade">A few frames</p>
+      <h2 class="mask"><span>Photographs</span></h2>
+      <div class="rule draw" data-anim="fade" data-orn="rule"></div>
+    </div>
+
+    <div class="masonry" id="grid"></div>
+
+    <div class="more-wrap">
+      <button class="btn" id="moreBtn" type="button" data-anim="fade" hidden><span></span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 4. FILM ══════════ -->
+<section class="section film-sec" id="film">
+  <div class="wrap">
+    <div class="head">
+      <div class="orn draw" data-anim="fade" data-orn="lamp"></div>
+      <p class="eyebrow" data-anim="fade">In motion</p>
+      <h2 class="mask"><span>Our Film</span></h2>
+      <div class="rule draw" data-anim="fade" data-orn="rule"></div>
+    </div>
+    <div class="film" id="filmStage" data-anim="scale"></div>
+  </div>
+</section>
+
+<!-- ══════════ 5. EVENTS ══════════ -->
+<section class="section tint-b" id="events">
+  <div class="wrap">
+    <div class="head">
+      <div class="orn draw" data-anim="fade" data-orn="lamp"></div>
+      <p class="eyebrow" data-anim="fade">The occasion</p>
+      <h2 class="mask"><span>The Celebration</span></h2>
+      <div class="rule draw" data-anim="fade" data-orn="rule"></div>
+    </div>
+    <div class="events" id="eventGrid" data-stagger style="--step:150ms"></div>
+  </div>
+</section>
+
+<!-- ══════════ 6. VENUE ══════════ -->
+<section class="section tint-c" id="venue">
+  <div class="wrap">
+    <div class="head">
+      <div class="orn draw" data-anim="fade" data-orn="lamp"></div>
+      <p class="eyebrow" data-anim="fade">Where to come</p>
+      <h2 class="mask"><span>The Venue</span></h2>
+      <div class="rule draw" data-anim="fade" data-orn="rule"></div>
+    </div>
+
+    <div class="venue" data-anim="up">
+      <div class="venue-mandala" data-orn="mandala" aria-hidden="true"></div>
+      <h3 id="vName"></h3>
+      <p class="venue-addr" id="vAddr"></p>
+      <div class="venue-meta">
+        <p><span class="k">Date</span><span class="v" id="vDate"></span></p>
+        <p><span class="k">Time</span><span class="v" id="vTime"></span></p>
+      </div>
+      <a class="btn" id="mapBtn" target="_blank" rel="noopener noreferrer"><span>Open in Google Maps</span></a>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 7. FAMILIES ══════════ -->
+<section class="section tint-a" id="families">
+  <div class="wrap">
+    <div class="head">
+      <div class="orn draw" data-anim="fade" data-orn="lamp"></div>
+      <p class="eyebrow" data-anim="fade">Our people</p>
+      <h2 class="mask"><span>With the Blessings of Our Families</span></h2>
+      <div class="rule draw" data-anim="fade" data-orn="rule"></div>
+    </div>
+
+    <div class="fams">
+      <article class="fam" id="famBride" data-anim="left"></article>
+      <div class="fam-sep" data-orn="rule" aria-hidden="true"></div>
+      <article class="fam" id="famGroom" data-anim="right"></article>
+    </div>
+  </div>
+</section>
+
+<!-- ══════════ 8. INVITATION ══════════ -->
+<section class="section invite-sec" id="invitation">
+  <div class="wrap">
+    <div class="invite">
+      <svg class="invite-frame" data-anim="fade" viewBox="0 0 800 460" preserveAspectRatio="none" aria-hidden="true">
+        <rect x="4" y="4" width="792" height="452"></rect>
+      </svg>
+      <div class="invite-in">
+        <div class="orn draw" data-anim="fade" data-orn="lamp"></div>
+        <p class="invite-text" data-anim="up">
+          With the blessings of our families, we invite you to join us as we begin our life together.
+        </p>
+        <div class="rule draw" data-anim="fade" data-orn="rule"></div>
+        <p class="invite-couple" data-anim="up">
+          <span id="invBride"></span> <span class="amp">&amp;</span> <span id="invGroom"></span>
+        </p>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ══════════ 9. CLOSING ══════════ -->
+<section class="closing" id="closing">
+  <div class="closing-bg"><img id="closePhoto" alt="" aria-hidden="true"><div class="closing-veil"></div></div>
+  <div class="closing-in">
+    <p class="closing-l1" data-anim="up"><span id="clBride"></span> <span class="amp">&amp;</span> <span id="clGroom"></span></p>
+    <p class="closing-l2" data-anim="up" id="clDate"></p>
+    <p class="closing-l3" data-anim="fade">Palakkad</p>
+    <p class="closing-thanks" data-anim="up">Thank you for being part of this. We look forward to seeing you.</p>
+  </div>
+</section>
+
+<footer class="foot">
+  <div class="orn" data-orn="lamp" aria-hidden="true"></div>
+  <p class="foot-nm" id="ftNames"></p>
+  <p class="foot-pl">Palakkad, Kerala</p>
+</footer>
+
+<!-- LIGHTBOX -->
+<div class="lb" id="lb" role="dialog" aria-modal="true" aria-label="Photograph viewer" hidden>
+  <button class="lb-btn lb-x" id="lbX" type="button" aria-label="Close">&times;</button>
+  <button class="lb-btn lb-p" id="lbP" type="button" aria-label="Previous">&#8249;</button>
+  <button class="lb-btn lb-n" id="lbN" type="button" aria-label="Next">&#8250;</button>
+  <figure class="lb-stage"><img id="lbImg" alt=""><figcaption class="lb-cap" id="lbCap"></figcaption></figure>
+  <div class="lb-count" id="lbCount"></div>
+</div>
+
+<!-- VIDEO MODAL -->
+<div class="vm" id="vm" role="dialog" aria-modal="true" aria-label="Video player" hidden>
+  <button class="vm-x" id="vmX" type="button" aria-label="Close video">&times;</button>
+  <div class="vm-stage" id="vmStage"></div>
+</div>
+
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script>
+/* ═════════════════════════════════════════════════════════════════════════════
+   NITHYA & SREEJITH — 6 December 2026
+   Everything (HTML, CSS, JavaScript) lives in this one file.
+   Search for "weddingConfig" to jump to the settings.
+   ═════════════════════════════════════════════════════════════════════════════
+
+   ┌───────────────────────────────────────────────────────────────────────────┐
+   │                         M E D I A   S E T U P                             │
+   │           Putting your Google Drive photos and film on this page          │
+   └───────────────────────────────────────────────────────────────────────────┘
+
+   STEP 1 — UPLOAD
+     Make a folder in Google Drive, e.g. "Wedding Website Media".
+     Photos : JPG, long edge ~2000px, under ~1.5 MB each.
+     Film   : MP4 (H.264 video + AAC audio).
+
+   STEP 2 — SHARE IT (not optional)
+     A browser visiting this page is NOT signed in as you, so a private file
+     shows nothing. Right-click the FOLDER → Share → General access →
+     "Anyone with the link" → role "Viewer" → Done.
+     Everything inside becomes publicly readable, so keep private photos out.
+
+   STEP 3 — COPY EACH LINK
+     Right-click a file → Share → Copy link. You get:
+       https://drive.google.com/file/d/1A2b3C4d5E6f7G8h9I0jKlMnOpQrStUv/view?usp=sharing
+                                      └──────────── the file ID ────────────┘
+
+   STEP 4 — PASTE IT BELOW
+     Paste the WHOLE link. This script pulls the ID out for you. All of these
+     work, and so does a plain URL from any other host:
+       "https://drive.google.com/file/d/FILE_ID/view?usp=sharing"   ← just paste
+       "https://drive.google.com/open?id=FILE_ID"
+       "https://drive.google.com/uc?export=view&id=FILE_ID"
+       "FILE_ID"
+       "photos/01.jpg"                                  ← a file beside this page
+     YouTube and Vimeo links are detected automatically.
+
+   STEP 5 — WHAT URL FORMAT GETS USED
+     PHOTOS — tried in this order, falling through automatically:
+       1. https://lh3.googleusercontent.com/d/FILE_ID=w1800
+       2. https://drive.google.com/thumbnail?id=FILE_ID&sz=w1800
+       3. https://drive.google.com/uc?export=view&id=FILE_ID
+     VIDEO   — https://drive.google.com/file/d/FILE_ID/preview   (in an iframe)
+     POSTER  — https://drive.google.com/thumbnail?id=FILE_ID&sz=w1200
+     DOWNLOAD— https://drive.google.com/uc?export=download&id=FILE_ID
+
+   STEP 6 — LIMITS, AND WHAT TO USE INSTEAD
+     ✗ A PRIVATE Drive folder can never be read by browser JavaScript. There is
+       no workaround. NEVER paste an API key, OAuth token or service-account
+       JSON into this file — anyone can read it with View Source. None is needed.
+     ✗ Drive gives no raw .mp4 URL for an HTML <video> tag; it redirects and
+       rate-limits. That is why the film plays in a /preview iframe.
+     ✗ Drive throttles popular files ("quota exceeded"). If many guests open the
+       page at once, photos can go blank for a while. On a wedding day that
+       matters.
+
+     ✓ BETTER OPTIONS — every field below accepts any URL:
+       • FILM  → upload to YouTube as "Unlisted": hidden from search, anyone with
+                 the link can watch, no view limit, adapts to 4G. Paste the normal
+                 watch URL. This is the right choice for the film.
+       • PHOTOS→ commit them to your GitHub Pages repo in a /photos folder and
+                 write "photos/01.jpg" below. Fastest and most reliable of all.
+                 Cloudinary, ImageKit, Bunny.net and Cloudflare R2 also work.
+                 Google Photos ALBUM links do NOT work — Google blocks hotlinking.
+       • MUSIC → host the .mp3 beside this page and write "music/theme.mp3".
+
+     Nothing here breaks the page: every missing or broken item becomes a gold
+     placeholder card, and the rest of the site carries on.
+   ═══════════════════════════════════════════════════════════════════════════ */
+
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   ★  CONFIGURATION — EDIT BELOW, NOTHING ELSE  ★
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+const weddingConfig = {
+
+  bride: "Nithya",
+  groom: "Sreejith",
+
+  /* Format "YYYY-MM-DDTHH:MM:SS", 24-hour clock, local time. */
+  weddingDate: "2026-12-06T10:30:00",
+
+  tagline: "We are getting married, and we would be glad to have you there.",
+
+  venue: {
+    name:    "Hi-Tech Auditorium",
+    address: "Pirayiri, Palakkad, Kerala",
+    date:    "Sunday, 6 December 2026",
+    time:    "10:30 AM onwards",
+    mapsUrl: "https://maps.app.goo.gl/bE8aCB2E5XTHS4d66"
+  },
+
+  /* past: true renders the card muted, as something already held.
+     Any field left "" is simply not printed.                                  */
+  events: [
+    {
+      title: "Engagement",
+      tag:   "Already held",
+      icon:  "rings",
+      past:  true,
+      done:  "Held on 21 January 2026"
+    },
+    {
+      title: "Wedding",
+      tag:   "The Muhurtham",
+      icon:  "lamp",
+      date:  "Sunday, 6 December 2026",
+      time:  "10:30 AM",
+      venue: "Hi-Tech Auditorium, Pirayiri, Palakkad",
+      mapsUrl: "https://maps.app.goo.gl/bE8aCB2E5XTHS4d66"
+    }
+  ],
+
+  family: {
+    bride: {
+      title: "The Bride's Family",
+      names: [
+        { name: "Sri. Sreenivasan", relation: "Father" },
+        { name: "Smt. Bindu",       relation: "Mother" }
+      ],
+      address: ["Thiruvathira", "West Yakkara", "Palakkad – 678 001"],
+      phones:  []
+    },
+    groom: {
+      title: "The Groom's Family",
+      names: [
+        { name: "Late Sri. Sudheesh", relation: "Father" },
+        { name: "Smt. Shylaja",       relation: "Mother" },
+        { name: "Sri. Sujith",        relation: "Brother" }
+      ],
+      address: ["Chakkumthodi", "Sivan Kovil, Pirayiri", "Palakkad – 678 004"],
+      /* Shown as tap-to-call links. Write them however you want them read. */
+      phones:  ["+91 81138 60409", "+91 80758 43702"]
+    }
+  },
+
+  /* ─── PASTE YOUR GOOGLE DRIVE LINKS HERE ─────────────────────────────────
+     Read the MEDIA SETUP block above once. A number instead of a URL means
+     "reuse photos[n]" — e.g. heroPhoto: 0 uses the first gallery photo.      */
+  media: {
+
+    heroPhoto:  "https://drive.google.com/file/d/1YrTeeOsV1DV8KjqaE0qxIj-ebEPeW5ub/view?usp=drive_link",     // behind the opening screen
+    closePhoto: "https://drive.google.com/file/d/1kw6qs9OW9RkJ3w7OF_mMF49syKT1Z-3v/view?usp=drive_link",  // behind the closing screen
+
+    photos: [
+      "https://drive.google.com/file/d/17N9hbntUmWH4clzcGOL6_gXnjMjsW4iH/view?usp=drive_link",
+      "https://drive.google.com/file/d/1E_75RijoN_u3lq2-KX7GFewJOM5rvG9w/view?usp=drive_link",
+      "https://drive.google.com/file/d/1ywNLe09JPKQHsMvjJooXuyWwlRkCTONT/view?usp=drive_link",
+      "https://drive.google.com/file/d/1SKGG2pD39bpcSbAiK-4u-IOF63scGEJt/view?usp=drive_link",
+      "https://drive.google.com/file/d/1YrTeeOsV1DV8KjqaE0qxIj-ebEPeW5ub/view?usp=drive_link"
+      // "https://drive.google.com/file/d/FILE_ID/view?usp=sharing",
+      // …one line each, comma-separated. 20, 40, 100 — all fine.
+    ],
+
+    /* Optional, matched to photos by position. Leave [] for none. */
+    photoCaptions: [],
+
+    film:       "https://drive.google.com/file/d/1NwOt0TNwqJ_YAI_j6ePbMm6ypK_qjYkN/view?usp=drive_link",   // unlisted YouTube link recommended
+    filmPoster: "",                        // optional still; blank = automatic
+
+    music: ""                              // e.g. "music/theme.mp3"
+  },
+
+  options: {
+    galleryFirst: 12,     // photos shown before the "View all" button
+    petals:       16,     // falling jasmine (0 turns them off)
+    musicVolume:  0.32,
+    imageWidth:   1800    // px width requested from Drive
+  }
+};
+
+/* ═════════════════════════════════════════════════════════════════════════════
+   ★  END OF CONFIGURATION  ★
+   ═════════════════════════════════════════════════════════════════════════════ */
+
+(function () {
+  "use strict";
+
+  var cfg = weddingConfig;
+  var opt = cfg.options || {};
+  var $  = function (s, r) { return (r || document).querySelector(s); };
+  var $$ = function (s, r) { return Array.prototype.slice.call((r || document).querySelectorAll(s)); };
+  var REDUCED = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+
+  document.body.classList.remove("no-js");
+  document.body.classList.add("js");
+
+  /* ───────────────────────────────────────────────────────────────────────
+     A. ORNAMENTS — Kerala nilavilakku, mandala, corner scroll, jasmine
+     ─────────────────────────────────────────────────────────────────────── */
+  var mandalaSpokes = "";
+  for (var mi = 0; mi < 16; mi++) {
+    var ma = (mi * Math.PI * 2) / 16;
+    mandalaSpokes +=
+      '<path d="M' + (100 + Math.cos(ma) * 34).toFixed(1) + ' ' + (100 + Math.sin(ma) * 34).toFixed(1) +
+      'L' + (100 + Math.cos(ma) * 74).toFixed(1) + ' ' + (100 + Math.sin(ma) * 74).toFixed(1) + '"/>' +
+      '<circle cx="' + (100 + Math.cos(ma) * 54).toFixed(1) + '" cy="' + (100 + Math.sin(ma) * 54).toFixed(1) + '" r="3.6"/>';
+  }
+  var mandalaDots = "";
+  for (var di = 0; di < 28; di++) {
+    var da = (di * Math.PI * 2) / 28;
+    mandalaDots += '<circle cx="' + (100 + Math.cos(da) * 86).toFixed(1) + '" cy="' + (100 + Math.sin(da) * 86).toFixed(1) + '" r="2.2"/>';
+  }
+
+  var SVG = {
+    /* floral rule with a central lamp-flame diamond */
+    rule: '<svg viewBox="0 0 300 26" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M2 13h104" stroke="currentColor" stroke-width="1" opacity=".5"/>' +
+      '<path d="M194 13h104" stroke="currentColor" stroke-width="1" opacity=".5"/>' +
+      '<path d="M116 13c6-8 13-8 17 0-4 8-11 8-17 0Z" stroke="currentColor" stroke-width="1"/>' +
+      '<path d="M184 13c-6-8-13-8-17 0 4 8 11 8 17 0Z" stroke="currentColor" stroke-width="1"/>' +
+      '<path d="M150 2c4.4 6 8.4 8.4 8.4 11S154.4 18 150 24c-4.4-6-8.4-8.4-8.4-11S145.6 8 150 2Z" fill="currentColor"/>' +
+      '<circle cx="137" cy="13" r="1.9" fill="currentColor"/><circle cx="163" cy="13" r="1.9" fill="currentColor"/>' +
+      '</svg>',
+
+    /* nilavilakku — the Kerala oil lamp */
+    lamp: '<svg viewBox="0 0 48 62" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M24 2c2.8 3.8 4.6 6.4 4.6 9A4.6 4.6 0 0 1 24 15.6 4.6 4.6 0 0 1 19.4 11c0-2.6 1.8-5.2 4.6-9Z" fill="currentColor"/>' +
+      '<path d="M9 21h30l-4.5 7.5h-21L9 21Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>' +
+      '<path d="M24 28.5v13" stroke="currentColor" stroke-width="1.3"/>' +
+      '<path d="M14.5 41.5h19L30 48.5H18l-3.5-7Z" stroke="currentColor" stroke-width="1.3" stroke-linejoin="round"/>' +
+      '<path d="M11 54h26" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>' +
+      '<path d="M17 48.5V54M31 48.5V54" stroke="currentColor" stroke-width="1.1"/>' +
+      '</svg>',
+
+    mandala: '<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<g class="rot" stroke="currentColor" stroke-width="1">' +
+      '<circle cx="100" cy="100" r="94" opacity=".45"/><circle cx="100" cy="100" r="76" opacity=".7"/>' +
+      '<circle cx="100" cy="100" r="32"/>' + mandalaSpokes +
+      '<g opacity=".7">' + mandalaDots + '</g>' +
+      '</g><circle cx="100" cy="100" r="8" fill="currentColor" opacity=".8"/></svg>',
+
+    corner: '<svg viewBox="0 0 200 200" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M8 8h56M8 8v56" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>' +
+      '<path d="M16 16h32M16 16v32" stroke="currentColor" stroke-width=".9" opacity=".65" stroke-linecap="round"/>' +
+      '<path d="M8 78c28 0 46-18 46-46" stroke="currentColor" stroke-width=".9" opacity=".55"/>' +
+      '<path d="M64 32c10.5 0 19 8.5 19 19-10.5 0-19-8.5-19-19Z" fill="currentColor" opacity=".5"/>' +
+      '<path d="M32 64c0 10.5 8.5 19 19 19 0-10.5-8.5-19-19-19Z" fill="currentColor" opacity=".5"/>' +
+      '<path d="M82 16c9 4.5 13 11 13 20" stroke="currentColor" stroke-width=".9" opacity=".45"/>' +
+      '<path d="M16 82c4.5 9 11 13 20 13" stroke="currentColor" stroke-width=".9" opacity=".45"/>' +
+      '<circle cx="60" cy="60" r="3.2" fill="currentColor"/>' +
+      '<circle cx="100" cy="11" r="2.2" fill="currentColor" opacity=".55"/>' +
+      '<circle cx="11" cy="100" r="2.2" fill="currentColor" opacity=".55"/></svg>',
+
+    rings: '<svg viewBox="0 0 64 48" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<circle cx="24" cy="29" r="13.5" stroke="currentColor" stroke-width="1.8"/>' +
+      '<circle cx="41" cy="29" r="13.5" stroke="currentColor" stroke-width="1.8" opacity=".6"/>' +
+      '<path d="M41 6.5l3.2 5.4h-6.4L41 6.5Z" fill="currentColor"/>' +
+      '<path d="M37 12.6h8" stroke="currentColor" stroke-width="1.3"/></svg>',
+
+    petal: '<svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<path d="M12 2c3.7 3.3 5.7 6.6 5.7 10.2A5.7 5.7 0 0 1 12 22a5.7 5.7 0 0 1-5.7-9.8C6.3 8.6 8.3 5.3 12 2Z" fill="#FFFDF7" stroke="#E9D8B6" stroke-width=".7"/>' +
+      '<path d="M12 6.2c1.6 2.4 2.4 4.5 2.4 6.2" stroke="#EBDDC2" stroke-width=".6" stroke-linecap="round"/></svg>',
+
+    mono: '<svg viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">' +
+      '<circle cx="32" cy="32" r="29" stroke="currentColor" stroke-width="1" opacity=".55"/>' +
+      '<path d="M32 17c6.4 6.4 10.4 11 10.4 15.6a10.4 10.4 0 0 1-20.8 0C21.6 28 25.6 23.4 32 17Z" fill="currentColor" opacity=".5"/></svg>'
+  };
+
+  $$("[data-orn]").forEach(function (el) { el.innerHTML = SVG[el.dataset.orn] || ""; });
+
+  /* prime the stroke-draw lengths so each ornament draws itself in */
+  $$(".draw svg").forEach(function (svg) {
+    $$("path,circle,line", svg).forEach(function (p) {
+      var len = 300;
+      try { if (p.getTotalLength) len = Math.ceil(p.getTotalLength()) || 300; } catch (e) {}
+      p.style.setProperty("--len", len);
+      p.style.transitionDelay = (Math.random() * 0.35).toFixed(2) + "s";
+    });
+  });
+  (function primeFrame() {
+    var r = $(".invite-frame rect");
+    if (!r) return;
+    var p = 2 * (792 + 452);
+    r.style.setProperty("--p", p);
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     B. GOOGLE DRIVE URL HANDLING
+     ─────────────────────────────────────────────────────────────────────── */
+  var PLACEHOLDER = /^(GOOGLE_DRIVE|YOUR_|PASTE|FILE_ID|\[)|_URL(_\d+)?$/i;
+
+  function unset(v) {
+    if (v === null || v === undefined) return true;
+    if (typeof v === "number") return false;
+    var s = String(v).trim();
+    return s === "" || PLACEHOLDER.test(s);
+  }
+
+  function driveId(url) {
+    var s = String(url || "").trim();
+    if (!/drive\.google\.com|docs\.google\.com|^[\w-]{25,}$/.test(s)) return null;
+    var m = s.match(/\/file\/d\/([\w-]{10,})/) || s.match(/[?&]id=([\w-]{10,})/) ||
+            s.match(/\/d\/([\w-]{10,})/)       || s.match(/^([\w-]{25,})$/);
+    return m ? m[1] : null;
+  }
+  function ytId(url) {
+    var m = String(url || "").match(/(?:youtube\.com\/(?:watch\?v=|embed\/|shorts\/|live\/)|youtu\.be\/)([\w-]{6,})/);
+    return m ? m[1] : null;
+  }
+  function vimeoId(url) {
+    var m = String(url || "").match(/vimeo\.com\/(?:video\/)?(\d{6,})/);
+    return m ? m[1] : null;
+  }
+
+  /** every URL worth trying for one photo, best first */
+  function sources(url) {
+    if (unset(url)) return [];
+    var raw = String(url).trim();
+    var id  = driveId(raw);
+    if (!id) return [raw];
+    var w = opt.imageWidth || 1800;
+    return [
+      "https://lh3.googleusercontent.com/d/" + id + "=w" + w,
+      "https://drive.google.com/thumbnail?id=" + id + "&sz=w" + w,
+      "https://drive.google.com/uc?export=view&id=" + id
+    ];
+  }
+
+  /** a config value may be a number meaning "photos[n]" */
+  function deref(ref) {
+    if (typeof ref === "number") return (cfg.media.photos || [])[ref];
+    return ref;
+  }
+
+  function videoSource(url) {
+    if (unset(url)) return null;
+    var raw = String(url).trim();
+    var y = ytId(raw);
+    if (y) return { kind: "iframe",
+      src: "https://www.youtube-nocookie.com/embed/" + y + "?rel=0&modestbranding=1&playsinline=1",
+      poster: "https://i.ytimg.com/vi/" + y + "/maxresdefault.jpg",
+      poster2: "https://i.ytimg.com/vi/" + y + "/hqdefault.jpg" };
+    var v = vimeoId(raw);
+    if (v) return { kind: "iframe", src: "https://player.vimeo.com/video/" + v, poster: "", poster2: "" };
+    var d = driveId(raw);
+    if (d) return { kind: "iframe",
+      src: "https://drive.google.com/file/d/" + d + "/preview",
+      poster: "https://drive.google.com/thumbnail?id=" + d + "&sz=w1200",
+      poster2: "https://lh3.googleusercontent.com/d/" + d + "=w1200" };
+    return { kind: "video", src: raw, poster: "", poster2: "" };
+  }
+
+  /* ───────────────────────────────────────────────────────────────────────
+     C. IMAGES THAT NEVER BREAK THE PAGE
+     ─────────────────────────────────────────────────────────────────────── */
+  function placeholder(title, sub) {
+    var d = document.createElement("div");
+    d.className = "ph";
+    d.innerHTML = '<div class="ph-mark">' + SVG.mono + '</div>' +
+                  '<div class="ph-t"></div><div class="ph-s"></div>';
+    $(".ph-t", d).textContent = title || "A moment, soon";
+    $(".ph-s", d).textContent = sub || "Photograph coming up";
+    return d;
+  }
+
+  function smartImage(url, alt, phTitle, phSub) {
+    var list = sources(deref(url));
+    if (!list.length) return placeholder(phTitle, phSub);
+
+    var img = new Image(), i = 0;
+    img.alt = alt || "";
+    img.loading = "lazy";
+    img.decoding = "async";
+    img.className = "shimmer";
+    img.addEventListener("load", function () { img.classList.remove("shimmer"); });
+    img.addEventListener("error", function () {
+      i += 1;
+      if (i < list.length) { img.src = list[i]; return; }
+      var ph = placeholder(phTitle, "Photograph unavailable");
+      if (img.parentNode) img.parentNode.replaceChild(ph, img);
+    });
+    img.src = list[0];
+    return img;
+  }
+
+  function backdrop(id, url) {
+    var el = document.getElementById(id);
+    if (!el) return;
+    var list = sources(deref(url)), i = 0;
+    if (!list.length) { el.remove(); return; }
+    el.addEventListener("load", function () { el.classList.add("loaded"); });
+    el.addEventListener("error", function () {
+      i += 1;
+      if (i < list.length) el.src = list[i];
+      else el.remove();            /* the maroon gradient stays — still handsome */
+    });
+    el.src = list[0];
+  }
+  backdrop("heroPhoto",  cfg.media.heroPhoto);
+  backdrop("closePhoto", cfg.media.closePhoto);
+
+  /* ───────────────────────────────────────────────────────────────────────
+     D. TEXT FROM CONFIG
+     ─────────────────────────────────────────────────────────────────────── */
+  function setText(id, v) { var el = document.getElementById(id); if (el) el.textContent = v; }
+
+  /* split the names into letters so they can arrive one by one */
+  function letters(el, word) {
+    if (!el) return;
+    el.setAttribute("aria-label", word);
+    el.innerHTML = "";
+    word.split("").forEach(function (ch, i) {
+      var s = document.createElement("span");
+      s.className = "ltr";
+      s.style.setProperty("--d", i);
+      s.textContent = ch;
+      s.setAttribute("aria-hidden", "true");
+      el.appendChild(s);
+    });
+  }
+  letters($("#nmBride"), (cfg.bride || "").toUpperCase());
+  letters($("#nmGroom"), (cfg.groom || "").toUpperCase());
+
+  setText("heroSub", cfg.tagline || "");
+  setText("invBride", cfg.bride); setText("invGroom", cfg.groom);
+  setText("clBride",  cfg.bride); setText("clGroom",  cfg.groom);
+  setText("ftNames", cfg.bride + " & " + cfg.groom);
+  document.title = cfg.bride + " & " + cfg.groom + " — " + (cfg.venue.date || "");
+
+  /* ───────────────────────────────────────────────────────────────────────
+     E. COUNTDOWN with per-digit roll
+     ─────────────────────────────────────────────────────────────────────── */
+  var WHEN = (function () { var t = Date.parse(cfg.weddingDate); return isNaN(t) ? null : t; })();
+
+  if (WHEN) {
+    var dd = new Date(WHEN);
+    /* venue.date is used verbatim when you've written it, so the wording is yours */
+    setText("heroDate", !unset(cfg.venue.date) ? cfg.venue.date
+      : dd.toLocaleDateString("en-IN", { weekday:"long", day:"numeric", month:"long", year:"numeric" }));
+    setText("clDate", dd.toLocaleDateString("en-GB", { day:"numeric", month:"long", year:"numeric" }));
+  } else {
+    setText("heroDate", "Save the date");
+    setText("clDate", "");
+  }
+
+  function roll(el, str) {
+    if (!el) return;
+    /* build the digit cells once */
+    if (el.children.length !== str.length) {
+      el.innerHTML = "";
+      for (var k = 0; k < str.length; k++) {
+        var cell = document.createElement("span");
+        cell.className = "dg";
+        cell.innerHTML = '<i class="cur"></i>';
+        cell.firstChild.textContent = str[k];
+        cell.dataset.v = str[k];
+        el.appendChild(cell);
+      }
+      return;
+    }
+    for (var j = 0; j < str.length; j++) {
+      var c = el.children[j];
+      if (c.dataset.v === str[j]) continue;
+      c.dataset.v = str[j];
+      if (REDUCED) { c.firstChild.textContent = str[j]; continue; }
+      var nxt = document.createElement("i");
+      nxt.className = "nxt";
+      nxt.textContent = str[j];
+      c.appendChild(nxt);
+      /* force layout, then animate */
+      void c.offsetWidth;
+      c.classList.add("go");
+      (function (cell, next) {
+        setTimeout(function () {
+          cell.innerHTML = "";
+          next.className = "cur";
+          cell.appendChild(next);
+          cell.classList.remove("go");
+        }, 640);
+      })(c, nxt);
+    }
+  }
+
+  var pad = function (n) { return String(Math.max(0, n)).padStart(2, "0"); };
+  var note = $("#cdNote");
+
+  function tick() {
+    if (!WHEN) { if (note) note.textContent = "Our date will be announced soon."; return; }
+    var diff = WHEN - Date.now();
+
+    if (diff <= 0) {
+      ["cdD","cdH","cdM","cdS"].forEach(function (id) { roll($("#" + id), "00"); });
+      if (note) note.textContent = diff > -86400000
+        ? "Today is the day. Thank you for being here."
+        : "Married, and grateful to everyone who came.";
+      return;
+    }
+    var s = Math.floor(diff / 1000);
+    roll($("#cdD"), pad(Math.floor(s / 86400)));
+    roll($("#cdH"), pad(Math.floor(s / 3600) % 24));
+    roll($("#cdM"), pad(Math.floor(s / 60) % 60));
+    roll($("#cdS"), pad(s % 60));
+
+    if (note) {
+      var days = Math.floor(s / 86400);
+      note.textContent = days > 1 ? days + " days to go."
+                       : days === 1 ? "One day to go."
+                       : "Hours away now.";
+    }
+  }
+  tick();
+  setInterval(tick, 1000);
+
+  /* ───────────────────────────────────────────────────────────────────────
+     F. GALLERY
+     ─────────────────────────────────────────────────────────────────────── */
+  var items = [];
+
+  (function gallery() {
+    var grid = $("#grid");
+    if (!grid) return;
+    var photos   = (cfg.media.photos || []).filter(function (p) { return !unset(p); });
+    var captions = cfg.media.photoCaptions || [];
+    var firstN   = opt.galleryFirst || 12;
+
+    if (!photos.length) {
+      for (var n = 0; n < 6; n++) {
+        var t = document.createElement("figure");
+        t.className = "tile";
+        t.style.cursor = "default";
+        t.appendChild(placeholder("Our photographs", "Add links in the config"));
+        grid.appendChild(t);
+      }
+      return;
+    }
+
+    photos.forEach(function (url, i) {
+      var cap = captions[i] || "";
+      items.push({ url: url, cap: cap });
+
+      var tile = document.createElement("figure");
+      tile.className = "tile" + (i >= firstN ? " hidden" : "");
+      tile.tabIndex = 0;
+      tile.setAttribute("role", "button");
+      tile.setAttribute("aria-label", cap || ("Open photograph " + (i + 1)));
+      tile.appendChild(smartImage(url, cap || ("Photograph " + (i + 1)), "Our photographs", "Photograph unavailable"));
+      if (cap) {
+        var fc = document.createElement("figcaption");
+        fc.textContent = cap;
+        tile.appendChild(fc);
+      }
+      var open = function () { openLB(i, tile); };
+      tile.addEventListener("click", open);
+      tile.addEventListener("keydown", function (e) {
+        if (e.key === "Enter" || e.key === " ") { e.preventDefault(); open(); }
+      });
+      grid.appendChild(tile);
+    });
+
+    var more = $("#moreBtn");
+    if (more && photos.length > firstN) {
+      more.hidden = false;
+      $("span", more).textContent = "View all " + photos.length + " photographs";
+      more.addEventListener("click", function () {
+        $$(".tile.hidden", grid).forEach(function (t, k) {
+          setTimeout(function () { t.classList.remove("hidden"); requestAnimationFrame(function(){ t.classList.add("in"); }); }, k * 55);
+        });
+        more.style.transition = "opacity .5s ease, transform .5s ease";
+        more.style.opacity = 0; more.style.transform = "translateY(8px)";
+        setTimeout(function () { more.remove(); }, 520);
+      });
+    }
+  })();
+
+  /* tiles reveal on their own observer so they can stagger in rows */
+  (function tileReveal() {
+    var tiles = $$(".tile");
+    if (!("IntersectionObserver" in window)) { tiles.forEach(function (t) { t.classList.add("in"); }); return; }
+    var io = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (en, k) {
+        if (!en.isIntersecting) return;
+        setTimeout(function () { en.target.classList.add("in"); }, k * 70);
+        obs.unobserve(en.target);
+      });
+    }, { rootMargin: "140px 0px", threshold: .04 });
+    tiles.forEach(function (t) { io.observe(t); });
+  })();
+
+  /* ── Lightbox, opening with a zoom out of the tile it came from ───────── */
+  var lb = $("#lb"), lbImg = $("#lbImg"), lbCap = $("#lbCap"), lbCount = $("#lbCount");
+  var lbi = 0, lastFocus = null, originTile = null;
+
+  function show(i, fromTile) {
+    if (!items.length) return;
+    lbi = (i + items.length) % items.length;
+    var it = items[lbi], list = sources(it.url), s = 0;
+
+    lbImg.onerror = function () {
+      s += 1;
+      if (s < list.length) lbImg.src = list[s];
+      else { lbImg.removeAttribute("src"); lbCap.textContent = "This photograph could not be loaded."; }
+    };
+    lbImg.onload = function () {
+      if (!fromTile || REDUCED) return;
+      var srcImg = fromTile.querySelector("img");
+      if (!srcImg) return;
+      try {
+        var a = srcImg.getBoundingClientRect(), b = lbImg.getBoundingClientRect();
+        if (!b.width || !a.width) return;
+        lbImg.animate([
+          { transform: "translate(" + (a.left + a.width/2 - (b.left + b.width/2)) + "px," +
+                                      (a.top + a.height/2 - (b.top + b.height/2)) + "px) scale(" + (a.width / b.width) + ")",
+            opacity: .4 },
+          { transform: "none", opacity: 1 }
+        ], { duration: 720, easing: "cubic-bezier(.16,1,.3,1)" });
+      } catch (e) {}
+    };
+    lbImg.src = list[0] || "";
+    lbImg.alt = it.cap || ("Photograph " + (lbi + 1));
+    lbCap.textContent = it.cap || "";
+    if (lbCount) lbCount.textContent = (lbi + 1) + " / " + items.length;
+
+    /* warm the neighbours so next/prev feel instant */
+    [lbi + 1, lbi - 1].forEach(function (n) {
+      var nb = items[(n + items.length) % items.length];
+      if (nb) { var pre = new Image(); pre.src = sources(nb.url)[0] || ""; }
+    });
+  }
+
+  function openLB(i, tile) {
+    if (!lb || !items.length) return;
+    lastFocus = document.activeElement;
+    originTile = tile || null;
+    lb.hidden = false;
+    document.body.classList.add("lock");
+    requestAnimationFrame(function () { lb.classList.add("open"); });
+    show(i, tile);
+    $("#lbX").focus();
+  }
+  function closeLB() {
+    if (!lb) return;
+    lb.classList.remove("open");
+    document.body.classList.remove("lock");
+    setTimeout(function () { lb.hidden = true; lbImg.removeAttribute("src"); }, 700);
+    if (lastFocus && lastFocus.focus) lastFocus.focus();
+  }
+
+  if (lb) {
+    $("#lbX").addEventListener("click", closeLB);
+    $("#lbP").addEventListener("click", function () { show(lbi - 1); });
+    $("#lbN").addEventListener("click", function () { show(lbi + 1); });
+    lb.addEventListener("click", function (e) {
+      if (e.target === lb || e.target.classList.contains("lb-stage")) closeLB();
+    });
+    document.addEventListener("keydown", function (e) {
+      if (lb.hidden) return;
+      if (e.key === "Escape") closeLB();
+      if (e.key === "ArrowLeft") show(lbi - 1);
+      if (e.key === "ArrowRight") show(lbi + 1);
+    });
+    var tx = 0, ty = 0;
+    lb.addEventListener("touchstart", function (e) { tx = e.changedTouches[0].clientX; ty = e.changedTouches[0].clientY; }, { passive: true });
+    lb.addEventListener("touchend", function (e) {
+      var dx = e.changedTouches[0].clientX - tx, dy = e.changedTouches[0].clientY - ty;
+      if (Math.abs(dx) > 55 && Math.abs(dx) > Math.abs(dy)) show(lbi + (dx < 0 ? 1 : -1));
+      else if (dy > 95 && Math.abs(dy) > Math.abs(dx)) closeLB();
+    }, { passive: true });
+  }
+
+  /* ───────────────────────────────────────────────────────────────────────
+     G. FILM
+     ─────────────────────────────────────────────────────────────────────── */
+  (function film() {
+    var stage = $("#filmStage");
+    if (!stage) return;
+    var src = videoSource(cfg.media.film);
+
+    if (!src) { stage.appendChild(placeholder("Our film", "Add the link in the config")); return; }
+
+    var poster = document.createElement("div");
+    poster.className = "poster";
+    poster.tabIndex = 0;
+    poster.setAttribute("role", "button");
+    poster.setAttribute("aria-label", "Play our film");
+
+    var pUrl = !unset(cfg.media.filmPoster) ? cfg.media.filmPoster : (src.poster || "");
+    if (pUrl) {
+      var img = new Image(), tried = false;
+      img.alt = ""; img.decoding = "async"; img.className = "shimmer";
+      img.addEventListener("load", function () { img.classList.remove("shimmer"); });
+      img.addEventListener("error", function () {
+        if (!tried && src.poster2) { tried = true; img.src = src.poster2; return; }
+        if (img.parentNode) img.parentNode.replaceChild(placeholder("Our film", "Press play"), img);
+      });
+      img.src = sources(pUrl)[0] || pUrl;
+      poster.appendChild(img);
+    } else {
+      poster.appendChild(placeholder("Our film", "Press play"));
+    }
+
+    poster.insertAdjacentHTML("beforeend",
+      '<span class="play" aria-hidden="true"></span><span class="film-cap">Play</span>');
+
+    function play() {
+      stage.innerHTML = "";
+      if (src.kind === "iframe") {
+        var f = document.createElement("iframe");
+        f.src = src.src + (src.src.indexOf("?") > -1 ? "&" : "?") + "autoplay=1";
+        f.allow = "autoplay; encrypted-media; picture-in-picture; fullscreen";
+        f.allowFullscreen = true;
+        f.title = "Our film";
+        stage.appendChild(f);
+      } else {
+        var v = document.createElement("video");
+        v.src = src.src; v.controls = true; v.autoplay = true; v.playsInline = true;
+        v.addEventListener("error", function () {
+          stage.innerHTML = "";
+          stage.appendChild(placeholder("Our film", "This video could not be played"));
+        });
+        stage.appendChild(v);
+      }
+      pauseMusic();
+    }
+    poster.addEventListener("click", play);
+    poster.addEventListener("keydown", function (e) {
+      if (e.key === "Enter" || e.key === " ") { e.preventDefault(); play(); }
+    });
+    stage.appendChild(poster);
+  })();
+
+  /* video modal kept available for future use */
+  var vm = $("#vm"), vmStage = $("#vmStage");
+  function closeVM() {
+    if (!vm) return;
+    vm.classList.remove("open");
+    document.body.classList.remove("lock");
+    setTimeout(function () { vm.hidden = true; vmStage.innerHTML = ""; }, 600);
+  }
+  if (vm) {
+    $("#vmX").addEventListener("click", closeVM);
+    vm.addEventListener("click", function (e) { if (e.target === vm) closeVM(); });
+    document.addEventListener("keydown", function (e) { if (!vm.hidden && e.key === "Escape") closeVM(); });
+  }
+
+  /* ───────────────────────────────────────────────────────────────────────
+     H. EVENTS
+     ─────────────────────────────────────────────────────────────────────── */
+  (function events() {
+    var root = $("#eventGrid");
+    if (!root) return;
+
+    (cfg.events || []).forEach(function (ev, idx) {
+      var card = document.createElement("article");
+      card.className = "ev " + (ev.past ? "past" : "primary");
+      card.setAttribute("data-anim", "up");
+      card.style.setProperty("--i", idx);
+
+      var href = ev.mapsUrl && !unset(ev.mapsUrl) ? ev.mapsUrl
+               : (ev.venue && !unset(ev.venue)
+                  ? "https://www.google.com/maps/search/?api=1&query=" + encodeURIComponent(ev.venue) : "");
+
+      var rows = [["Date", ev.date], ["Time", ev.time], ["Venue", ev.venue]]
+                 .filter(function (r) { return r[1] && !unset(r[1]); });
+
+      var html = '<div class="ev-icon">' + (SVG[ev.icon] || SVG.lamp) + '</div><h3></h3><p class="ev-tag"></p>';
+      if (ev.past && ev.done) html += '<p class="ev-done"></p>';
+      if (rows.length) {
+        html += "<dl>";
+        rows.forEach(function (r, i) { html += '<div><dt data-i="' + i + '"></dt><dd data-i="' + i + '"></dd></div>'; });
+        html += "</dl>";
+      }
+      if (href) html += '<a class="ev-map" target="_blank" rel="noopener noreferrer">View on map</a>';
+      card.innerHTML = html;
+
+      $("h3", card).textContent = ev.title || "";
+      $(".ev-tag", card).textContent = ev.tag || "";
+      if (ev.past && ev.done) $(".ev-done", card).textContent = ev.done;
+      rows.forEach(function (r, i) {
+        $('dt[data-i="' + i + '"]', card).textContent = r[0];
+        $('dd[data-i="' + i + '"]', card).textContent = r[1];
+      });
+      if (href) $(".ev-map", card).href = href;
+
+      root.appendChild(card);
+    });
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     I. VENUE
+     ─────────────────────────────────────────────────────────────────────── */
+  (function venue() {
+    var v = cfg.venue || {};
+    setText("vName", v.name || "");
+    setText("vAddr", v.address || "");
+    setText("vDate", v.date || "");
+    setText("vTime", v.time || "");
+    var btn = $("#mapBtn");
+    if (btn) {
+      btn.href = (v.mapsUrl && !unset(v.mapsUrl)) ? v.mapsUrl
+        : "https://www.google.com/maps/search/?api=1&query=" +
+          encodeURIComponent([v.name, v.address].filter(Boolean).join(", "));
+    }
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     J. FAMILIES
+     ─────────────────────────────────────────────────────────────────────── */
+  (function families() {
+    var fam = cfg.family || {};
+
+    function build(elId, data) {
+      var box = document.getElementById(elId);
+      if (!box || !data) return;
+
+      var crest = document.createElement("div");
+      crest.className = "fam-crest";
+      crest.setAttribute("aria-hidden", "true");
+      crest.innerHTML = SVG.mandala;
+      box.appendChild(crest);
+
+      var h = document.createElement("h3");
+      h.textContent = data.title || "";
+      box.appendChild(h);
+
+      var names = document.createElement("div");
+      names.className = "fam-names";
+      (data.names || []).forEach(function (n) {
+        var p = document.createElement("p");
+        if (typeof n === "string") { p.textContent = n; }
+        else {
+          p.textContent = n.name || "";
+          if (n.relation) {
+            var r = document.createElement("span");
+            r.className = "rel";
+            r.textContent = n.relation;
+            p.appendChild(r);
+          }
+        }
+        names.appendChild(p);
+      });
+      box.appendChild(names);
+
+      if ((data.address || []).length) {
+        var ad = document.createElement("div");
+        ad.className = "fam-addr";
+        data.address.forEach(function (line, i) {
+          if (i) ad.appendChild(document.createElement("br"));
+          ad.appendChild(document.createTextNode(line));
+        });
+        box.appendChild(ad);
+      }
+
+      if ((data.phones || []).length) {
+        var tel = document.createElement("div");
+        tel.className = "fam-tel";
+        data.phones.forEach(function (num) {
+          var a = document.createElement("a");
+          a.href = "tel:" + String(num).replace(/[^\d+]/g, "");
+          a.textContent = num;
+          tel.appendChild(a);
+        });
+        box.appendChild(tel);
+      }
+    }
+
+    build("famBride", fam.bride);
+    build("famGroom", fam.groom);
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     K. MUSIC — off by default, the guest opts in
+     ─────────────────────────────────────────────────────────────────────── */
+  var audio = $("#audio"), mBtn = $("#musicBtn");
+  function pauseMusic() { if (audio && !audio.paused) { audio.pause(); if (mBtn) mBtn.classList.remove("on"); } }
+
+  (function music() {
+    if (!audio || !mBtn) return;
+    var url = cfg.media.music;
+    if (unset(url)) return;
+
+    var id = driveId(url);
+    audio.src = id ? "https://drive.google.com/uc?export=download&id=" + id : String(url).trim();
+    audio.volume = typeof opt.musicVolume === "number" ? opt.musicVolume : .32;
+    mBtn.hidden = false;
+
+    var broken = false;
+    audio.addEventListener("error", function () {
+      broken = true; mBtn.classList.remove("on");
+      toast("The music file could not be loaded.");
+    });
+    mBtn.addEventListener("click", function () {
+      if (broken) { toast("The music file could not be loaded."); return; }
+      if (audio.paused) {
+        audio.play().then(function () {
+          mBtn.classList.add("on");
+          mBtn.setAttribute("aria-label", "Pause background music");
+        }).catch(function () { toast("Your browser blocked playback. Tap again."); });
+      } else {
+        audio.pause(); mBtn.classList.remove("on");
+        mBtn.setAttribute("aria-label", "Play background music");
+      }
+    });
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     L. PETALS — three depth layers, so they drift rather than fall flat
+     ─────────────────────────────────────────────────────────────────────── */
+  (function petals() {
+    var layer = $("#petals");
+    if (!layer || REDUCED) return;
+    var count = typeof opt.petals === "number" ? opt.petals : 16;
+    if (window.innerWidth < 640) count = Math.round(count * .55);
+    if (count <= 0) return;
+
+    for (var i = 0; i < count; i++) {
+      var depth = Math.random();                       /* 0 = far, 1 = near */
+      var size  = 8 + depth * 15;
+      var p = document.createElement("span");
+      p.className = "petal";
+      p.innerHTML = SVG.petal;
+      p.style.width = size + "px";
+      p.style.height = size + "px";
+      p.style.left = (Math.random() * 100).toFixed(2) + "%";
+      p.style.setProperty("--o", (.35 + depth * .5).toFixed(2));
+      p.style.animationDuration = (22 - depth * 9 + Math.random() * 6).toFixed(1) + "s";
+      p.style.animationDelay = (-Math.random() * 26).toFixed(1) + "s";
+      p.style.filter = "blur(" + ((1 - depth) * 1.6).toFixed(2) + "px) drop-shadow(0 2px 4px rgba(78,13,30,.14))";
+      layer.appendChild(p);
+    }
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     M. REVEAL — one observer for every animated element
+     ─────────────────────────────────────────────────────────────────────── */
+  (function reveal() {
+    /* hand each staggered child its index */
+    $$("[data-stagger]").forEach(function (parent) {
+      $$(":scope > *", parent).forEach(function (child, i) { child.style.setProperty("--i", i); });
+    });
+
+    var els = $$("[data-anim], .mask, .draw, .invite-frame");
+    if (!("IntersectionObserver" in window)) { els.forEach(function (e) { e.classList.add("in"); }); return; }
+
+    var io = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (en) {
+        if (!en.isIntersecting) return;
+        en.target.classList.add("in");
+        obs.unobserve(en.target);
+      });
+    }, { rootMargin: "0px 0px -10% 0px", threshold: .1 });
+
+    els.forEach(function (e) { io.observe(e); });
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     N. SCROLL — progress, hero parallax, dark-section border tint
+     ─────────────────────────────────────────────────────────────────────── */
+  (function scrollFx() {
+    var bar = $("#bar");
+    var heroBg = $(".hero-bg"), heroContent = $("#heroContent");
+    var closeBg = $(".closing-bg");
+    var darkSections = $$(".count-sec, .film-sec, .invite-sec, .closing");
+    var ticking = false;
+
+    function frame() {
+      var y = window.scrollY || window.pageYOffset;
+      var h = document.documentElement.scrollHeight - window.innerHeight;
+
+      if (bar) bar.style.width = (h > 0 ? (y / h) * 100 : 0) + "%";
+
+      if (!REDUCED) {
+        var vh = window.innerHeight;
+        if (heroBg && y < vh * 1.2) heroBg.style.transform = "translate3d(0," + (y * .32).toFixed(1) + "px,0)";
+        if (heroContent && y < vh) {
+          var t = Math.min(1, y / (vh * .82));
+          heroContent.style.opacity = (1 - t).toFixed(3);
+          heroContent.style.transform = "translate3d(0," + (y * .14).toFixed(1) + "px,0) scale(" + (1 - t * .06).toFixed(3) + ")";
+        }
+        if (closeBg) {
+          var r = closeBg.parentNode.getBoundingClientRect();
+          if (r.top < vh && r.bottom > 0) closeBg.style.transform = "translate3d(0," + (r.top * -.1).toFixed(1) + "px,0)";
+        }
+      }
+
+      /* the kasavu frame warms up over dark sections */
+      var mid = window.innerHeight / 2, onDark = false;
+      for (var i = 0; i < darkSections.length; i++) {
+        var b = darkSections[i].getBoundingClientRect();
+        if (b.top <= mid && b.bottom >= mid) { onDark = true; break; }
+      }
+      document.body.classList.toggle("on-dark", onDark);
+
+      ticking = false;
+    }
+    window.addEventListener("scroll", function () {
+      if (!ticking) { ticking = true; requestAnimationFrame(frame); }
+    }, { passive: true });
+    window.addEventListener("resize", frame, { passive: true });
+    frame();
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     O. POINTER TILT on the cards (desktop only, very slight)
+     ─────────────────────────────────────────────────────────────────────── */
+  (function tilt() {
+    if (REDUCED || !window.matchMedia("(pointer:fine)").matches) return;
+    $$(".ev, .venue, .fam, .cd").forEach(function (card) {
+      card.addEventListener("pointermove", function (e) {
+        var r = card.getBoundingClientRect();
+        var px = (e.clientX - r.left) / r.width - .5;
+        var py = (e.clientY - r.top) / r.height - .5;
+        card.style.transform =
+          "perspective(900px) rotateX(" + (-py * 3).toFixed(2) + "deg) rotateY(" + (px * 3).toFixed(2) + "deg) translateY(-4px)";
+      });
+      card.addEventListener("pointerleave", function () { card.style.transform = ""; });
+    });
+  })();
+
+  /* ───────────────────────────────────────────────────────────────────────
+     P. ANCHORS, TOAST, LOADER
+     ─────────────────────────────────────────────────────────────────────── */
+  $$('a[href^="#"]').forEach(function (a) {
+    a.addEventListener("click", function (e) {
+      var target = document.querySelector(a.getAttribute("href"));
+      if (!target) return;
+      e.preventDefault();
+      target.scrollIntoView({ behavior: REDUCED ? "auto" : "smooth", block: "start" });
+    });
+  });
+
+  var toastTimer = null;
+  function toast(text) {
+    var el = $("#toast");
+    if (!el) return;
+    el.textContent = text;
+    el.classList.add("show");
+    clearTimeout(toastTimer);
+    toastTimer = setTimeout(function () { el.classList.remove("show"); }, 4200);
+  }
+
+  (function loader() {
+    var el = $("#loader");
+    var lift = function () {
+      if (!el) return;
+      el.classList.add("done");
+      document.body.classList.add("loaded-page");   /* releases the hero animation */
+      setTimeout(function () { if (el.parentNode) el.remove(); }, 1200);
+    };
+    if (document.readyState === "complete") setTimeout(lift, 650);
+    else window.addEventListener("load", function () { setTimeout(lift, 650); });
+    setTimeout(lift, 4600);       /* hard ceiling — slow media never holds the page */
+  })();
+
+  if (unset(cfg.media.heroPhoto) && !(cfg.media.photos || []).some(function (p) { return !unset(p); })) {
+    console.info("%c Nithya & Sreejith ",
+      "background:#4E0D1E;color:#E6CE95;padding:4px 10px;font-size:13px",
+      "\nNo media configured yet. Read the MEDIA SETUP block at the top of the script.");
+  }
+})();
+</script>
+</body>
+</html>
