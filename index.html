@@ -1023,7 +1023,7 @@ body.lock{ overflow:hidden; }
         </p>
         <div class="rule draw" data-anim="fade" data-orn="rule"></div>
         <p class="invite-couple" data-anim="up">
-          <span id="invBride"></span> <span class="amp">&amp;</span> <span id="invGroom"></span>
+          <span id="invGroom"></span> <span class="amp">&amp;</span> <span id="invBride"></span>
         </p>
       </div>
     </div>
@@ -1036,7 +1036,7 @@ body.lock{ overflow:hidden; }
 <section class="closing" id="closing">
   <div class="closing-bg"><img id="closePhoto" alt="" aria-hidden="true"><div class="closing-veil"></div></div>
   <div class="closing-in">
-    <p class="closing-l1" data-anim="up"><span id="clBride"></span> <span class="amp">&amp;</span> <span id="clGroom"></span></p>
+    <p class="closing-l1" data-anim="up"><span id="clGroom "></span> <span class="amp">&amp;</span> <span id="clBride"></span></p>
     <p class="closing-l2" data-anim="up" id="clDate"></p>
     <p class="closing-l3" data-anim="fade">Palakkad</p>
     <p class="closing-thanks" data-anim="up">Thank you for being part of this. We look forward to seeing you.</p>
@@ -1479,14 +1479,15 @@ const weddingConfig = {
       el.appendChild(s);
     });
   }
+   letters($("#nmGroom"), (cfg.groom || "").toUpperCase());
   letters($("#nmBride"), (cfg.bride || "").toUpperCase());
-  letters($("#nmGroom"), (cfg.groom || "").toUpperCase());
+  
 
   setText("heroSub", cfg.tagline || "");
   setText("invBride", cfg.bride); setText("invGroom", cfg.groom);
   setText("clBride",  cfg.bride); setText("clGroom",  cfg.groom);
   setText("ftNames", cfg.groom + " & " + cfg.bride);
-  document.title = cfg.bride + " & " + cfg.groom + " — " + (cfg.venue.date || "");
+  document.title = cfg.groom + " & " + cfg.bride + " — " + (cfg.venue.date || "");
 
   /* ───────────────────────────────────────────────────────────────────────
      E. COUNTDOWN with per-digit roll
