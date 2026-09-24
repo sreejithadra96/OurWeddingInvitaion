@@ -3,10 +3,10 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Nithya &amp; Sreejith — 6 December 2026</title>
+<title>Sreejith &amp; Nithya — 6 December 2026</title>
 <meta name="description" content="With the blessings of our families, we invite you to join us as we begin our life together. Sunday, 6 December 2026 — Hi-Tech Auditorium, Pirayiri, Palakkad.">
 <meta name="theme-color" content="#4E0D1E">
-<meta property="og:title" content="Nithya &amp; Sreejith — 6 December 2026">
+<meta property="og:title" content="Sreejith &amp; Nithya — 6 December 2026">
 <meta property="og:description" content="With the blessings of our families, we invite you to join us as we begin our life together.">
 <meta property="og:type" content="website">
 
@@ -886,9 +886,9 @@ body.lock{ overflow:hidden; }
   <div class="hero-content" id="heroContent">
     <p class="hero-eyebrow">The Wedding Of</p>
     <h1 class="hero-names">
-      <span class="nm" id="nmBride"></span>
-      <span class="hero-amp"><span>&amp;</span></span>
       <span class="nm" id="nmGroom"></span>
+      <span class="hero-amp"><span>&amp;</span></span>
+      <span class="nm" id="nmBride"></span>
     </h1>
     <div class="hero-rule" data-orn="rule"></div>
     <p class="hero-sub" id="heroSub"></p>
@@ -1485,7 +1485,7 @@ const weddingConfig = {
   setText("heroSub", cfg.tagline || "");
   setText("invBride", cfg.bride); setText("invGroom", cfg.groom);
   setText("clBride",  cfg.bride); setText("clGroom",  cfg.groom);
-  setText("ftNames", cfg.bride + " & " + cfg.groom);
+  setText("ftNames", cfg.groom + " & " + cfg.bride);
   document.title = cfg.bride + " & " + cfg.groom + " — " + (cfg.venue.date || "");
 
   /* ───────────────────────────────────────────────────────────────────────
